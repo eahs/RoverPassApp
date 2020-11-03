@@ -2,7 +2,7 @@
 
 # RoverPass App 1.0 README
 
-By [YOUR NAMES HERE]
+By [Taranveer Flora, Imaan Ail, Josh Averion, and Aidan Fleming]
 
 Easton Area High School
 
