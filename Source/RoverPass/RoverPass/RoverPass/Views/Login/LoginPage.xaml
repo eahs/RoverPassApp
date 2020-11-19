@@ -11,7 +11,7 @@
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:RoverPass.Views.Login"
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.Login"
-    BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=LoginBackground.png,
+    BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=screen.png,
                                                                   iOSPhoneLandscape=LoginBackground-Landscape.png,
                                                                   iOSTabletLandscape=LoginBackground-Landscape.png}"
     NavigationPage.HasNavigationBar="False"
@@ -73,7 +73,7 @@
                             FontSize="20"
                             HorizontalTextAlignment="Center"
                             Style="{StaticResource LabelStyle}"
-                            Text="Log In" />
+                            Text="Welcome to Rover Pass!" />
 
                         <!--  Label to display the description of this page  -->
                         <Label
@@ -82,7 +82,7 @@
                             FontFamily="{StaticResource Montserrat-Medium}"
                             HorizontalTextAlignment="Center"
                             Style="{StaticResource LabelStyle}"
-                            Text="Let's get to work" />
+                            Text="Log in using your google account"/>
 
                         <!--  Entry to get email ID from user  -->
                         <local:EmailEntry Grid.Row="2" Padding="0,24" />
@@ -129,13 +129,13 @@
                             FontFamily="{StaticResource Montserrat-Medium}"
                             HorizontalTextAlignment="Center"
                             Style="{StaticResource LabelStyle}"
-                            Text="Or create an account using social media" />
+                            Text="Or log in using Google" />
 
                         <!--  Login through facebook account  -->
                         <buttons:SfButton
                             Grid.Row="7"
                             Margin="0,16,0,16"
-                            BackgroundColor="{DynamicResource FacebookBlue}"
+                            BackgroundColor="{DynamicResource Gray-White}"
                             Command="{Binding SocialMediaLoginCommand}"
                             CornerRadius="20"
                             HeightRequest="40">
@@ -145,16 +145,17 @@
                                     Orientation="Horizontal"
                                     VerticalOptions="Center">
                                     <Label
+                                        
                                         FontFamily="{StaticResource FontIcons}"
                                         FontSize="18"
-                                        Text="&#xe735;"
-                                        TextColor="{DynamicResource Gray-White}"
+                                        Text="&#xe603;"
+                                        TextColor="{DynamicResource Gray-Black}"
                                         VerticalTextAlignment="Center" />
                                     <Label
                                         FontFamily="{StaticResource Montserrat-Medium}"
-                                        FontSize="16"
-                                        Text="Login with Facebook"
-                                        TextColor="{DynamicResource Gray-White}" />
+                                        FontSize="20"
+                                        Text="Login with Google"
+                                        TextColor="{DynamicResource Gray-Black}" />
                                 </StackLayout>
                             </buttons:SfButton.Content>
                         </buttons:SfButton>

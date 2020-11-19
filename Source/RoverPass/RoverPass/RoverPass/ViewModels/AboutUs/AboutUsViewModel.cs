@@ -32,67 +32,38 @@ namespace RoverPass.ViewModels.AboutUs
         public AboutUsViewModel()
         {
             this.productDescription =
-                "Situated in the heart of Smith-town, Acme Products, Inc., has a long-standing tradition of selling the best products while providing the fastest service on the market. Since 1952, we’ve helped our customers identify their needs, understand their wants, and capture their dreams.";
+                "A group of four juniors one day decided to create a virtual hall pass app that allows for schools to further integrate technology and manage an organized hallway system. The Rover Pass app is an all electronic hall pass monitoring system which allows for an efficient and eco-friendly environment.";
             this.productIcon = App.BaseImageUrl + "Icon.png";
             this.productVersion = "1.0";
-            this.cardsTopImage = App.BaseImageUrl + "Mask.png";
+            this.cardsTopImage = "RoverBackground.png";
 
             this.EmployeeDetails = new ObservableCollection<AboutUsModel>
             {
                 new AboutUsModel
                 {
-                    EmployeeName = "Alice",
-                    Image = App.BaseImageUrl + "ProfileImage15.png",
-                    Designation = "Project Manager"
+                    EmployeeName = "Taranveer Flora",
+                    Image = "ProfileTaranveer.png",
+                    Designation = "Scrum Master, Frontend and Backend Dev"
                 },
                 new AboutUsModel
                 {
-                    EmployeeName = "Jessica Park",
-                    Image = App.BaseImageUrl + "ProfileImage10.png",
-                    Designation = "Senior Manager"
+                    EmployeeName = "Imaan Ali",
+                    Image = "ProfileImaan.png",
+                    Designation = "Product Owner and Frontend Dev"
                 },
                 new AboutUsModel
                 {
-                    EmployeeName = "Lisa",
-                    Image = App.BaseImageUrl + "ProfileImage11.png",
-                    Designation = "Senior Developer"
+                    EmployeeName = "Aidan Fleming",
+                    Image = "ProfileAidan.png",
+                    Designation = "Backend Dev"
                 },
                 new AboutUsModel
                 {
-                    EmployeeName = "Rebecca",
-                    Image = App.BaseImageUrl + "ProfileImage12.png",
-                    Designation = "Senior Designer"
+                    EmployeeName = "Josh Averion",
+                    Image = "JoshProfile.png",
+                    Designation = "Backend Dev"
                 },
-                new AboutUsModel
-                {
-                    EmployeeName = "Alexander",
-                    Image = App.BaseImageUrl + "ProfileImage3.png",
-                    Designation = "Senior Manager"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Anthony",
-                    Image = App.BaseImageUrl + "ProfileImage1.png",
-                    Designation = "Senior Developer"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Danielle",
-                    Image = App.BaseImageUrl + "ProfileImage7.png",
-                    Designation = "Senior Developer"
-                },
-                 new AboutUsModel
-                {
-                    EmployeeName = "Kyle Greene",
-                    Image = App.BaseImageUrl + "ProfileImage6.png",
-                    Designation = "Senior Developer"
-                },
-                  new AboutUsModel
-                {
-                    EmployeeName = "Navya Sharma",
-                    Image = App.BaseImageUrl + "ProfileImage13.png",
-                    Designation = "Testing Engineer"
-                }
+                
             };
 
             this.ItemSelectedCommand = new Command(this.ItemSelected);

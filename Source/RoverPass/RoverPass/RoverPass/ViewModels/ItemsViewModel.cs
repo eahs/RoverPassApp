@@ -20,7 +20,7 @@ namespace RoverPass.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Manage Classes";
             Items = new ObservableCollection<Item>();
 
             ItemTapped = new Command<Item>(OnItemSelected);
