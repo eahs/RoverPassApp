@@ -30,7 +30,7 @@
             <StackLayout>
 
                 <!--  Title View  -->
-                <controls:TitleView Title="My Books" Grid.Row="0">
+                <controls:TitleView Title="Select Your Destination" Grid.Row="0">
                     <controls:TitleView.TrailingView>
                         <buttons:SfButton
                             Command="{TemplateBinding BindingContext.SearchCommand}"
