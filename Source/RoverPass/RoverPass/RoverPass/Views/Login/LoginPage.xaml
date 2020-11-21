@@ -17,6 +17,7 @@
     NavigationPage.HasNavigationBar="False"
     Style="{StaticResource ContentPageStyle}">
 
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <converter:BooleanToColorConverter x:Key="ColorConverter" />

@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Model = RoverPass.Models.Article;
 
+
 namespace RoverPass.ViewModels.Destination
 {
     /// <summary>

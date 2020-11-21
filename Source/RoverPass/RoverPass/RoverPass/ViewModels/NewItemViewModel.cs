@@ -5,6 +5,7 @@ using System.Windows.Input;
 using RoverPass.Models;
 using Xamarin.Forms;
 
+
 namespace RoverPass.ViewModels
 {
     public class NewItemViewModel : BaseViewModel

@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using Xamarin.Forms.Internals;
 
+
 namespace RoverPass.Models.Notification
 {
     /// <summary>

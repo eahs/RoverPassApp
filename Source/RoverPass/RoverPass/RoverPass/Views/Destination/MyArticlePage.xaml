@@ -12,6 +12,7 @@
     x:Name="myArticlePage"
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False">
+    
 
     <ContentPage.Resources>
         <ResourceDictionary>

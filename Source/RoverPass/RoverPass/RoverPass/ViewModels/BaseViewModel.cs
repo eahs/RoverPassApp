@@ -10,6 +10,7 @@ using RoverPass.Services;
 using System.Windows.Input;
 using System.Threading.Tasks;
 
+
 namespace RoverPass.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged

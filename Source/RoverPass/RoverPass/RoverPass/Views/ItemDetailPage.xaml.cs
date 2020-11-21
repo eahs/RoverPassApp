@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using RoverPass.ViewModels;
 
+
 namespace RoverPass.Views
 {
     public partial class ItemDetailPage : ContentPage

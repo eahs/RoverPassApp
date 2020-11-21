@@ -3,6 +3,7 @@ using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
+
 namespace RoverPass.Converters
 {
     /// <summary>

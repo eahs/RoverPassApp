@@ -10,6 +10,7 @@
     xmlns:graphics="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
+    
     <Color x:Key="OrangeyYellow">#fcbc0f</Color>
     <Color x:Key="Transparent">Transparent</Color>
     <Color x:Key="Gold">#fcbc0f</Color>
