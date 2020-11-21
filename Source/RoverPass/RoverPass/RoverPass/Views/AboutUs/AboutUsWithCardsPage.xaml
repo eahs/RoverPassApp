@@ -107,7 +107,7 @@
                         FontFamily="{StaticResource Montserrat-Bold}"
                         FontSize="20"
                         Style="{StaticResource HeaderLabelStyle}"
-                        Text="Meet The Developers- Yessir" />
+                        Text="Meet The Developers" />
                 </StackLayout>
                 <!--  Employee profiles  -->
                 <listView:SfListView

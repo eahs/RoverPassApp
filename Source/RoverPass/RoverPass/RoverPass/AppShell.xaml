@@ -3,9 +3,11 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:RoverPass.Views"
        xmlns:aboutus="clr-namespace:RoverPass.Views.AboutUs"
+      
        xmlns:destination="clr-namespace:RoverPass.Views.Destination"
        xmlns:login="clr-namespace:RoverPass.Views.Login"
-       xmlns:notification="clr-namespace:RoverPass.Views.Notification"
+       xmlns:Notification="clr-namespace:RoverPass.Views.Notification"
+
        
        Title = "RoverPass"
        x:Class="RoverPass.AppShell">
@@ -85,10 +87,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="About" Icon="tab_about.png" Route="AboutUsPage" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
+        <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
         <ShellContent Title="Manage Classes" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="Select Destination" Icon="tab_about.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:MyArticlePage}" />
-        <ShellContent Title="Notifications" Icon="tab_about.png" Route="Notification" ContentTemplate="{DataTemplate notification:ECommerceNotificationPage}" />
+        <ShellContent Title="Notifications" Icon="tab_about.png" Route="NotificationPage" ContentTemplate="{DataTemplate Notification:ECommerceNotificationPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
