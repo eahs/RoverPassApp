@@ -34,7 +34,7 @@
                     <controls:TitleView.TrailingView>
                         <buttons:SfButton
                             Command="{TemplateBinding BindingContext.SearchCommand}"
-                            CornerRadius="10"
+                            CornerRadius="4"
                             Style="{StaticResource IconButtonStyle}"
                             Text="{StaticResource Search}" />
                     </controls:TitleView.TrailingView>
