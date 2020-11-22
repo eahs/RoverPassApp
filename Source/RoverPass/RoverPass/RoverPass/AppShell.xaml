@@ -6,7 +6,7 @@
       
        xmlns:destination="clr-namespace:RoverPass.Views.Destination"
        xmlns:login="clr-namespace:RoverPass.Views.Login"
-       xmlns:Notification="clr-namespace:RoverPass.Views.Notification"
+       
 
        
        Title = "RoverPass"
@@ -90,7 +90,7 @@
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
         <ShellContent Title="Manage Classes" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="Select Destination" Icon="tab_about.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:MyArticlePage}" />
-        <ShellContent Title="Notifications" Icon="tab_about.png" Route="NotificationPage" ContentTemplate="{DataTemplate Notification:ECommerceNotificationPage}" />
+       
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

@@ -30,16 +30,7 @@ namespace RoverPass.ViewModels.Destination
         {
             this.articleList = new ObservableCollection<Model>
             {
-                new Model { ImagePath = App.BaseImageUrl + "Book1.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book2.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book3.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book4.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book5.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book6.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book7.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book8.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book9.png" },
-                new Model { ImagePath = App.BaseImageUrl + "Book10.png" },
+                
             };
 
             this.SearchCommand = new Command(this.SearchButtonClicked);

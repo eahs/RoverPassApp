@@ -3,12 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoverPass.Views.ItemsPage"
              Title="{Binding Title}"
+              BackgroundColor="{DynamicResource Gray-Black}"
              xmlns:local="clr-namespace:RoverPass.ViewModels"  
              xmlns:model="clr-namespace:RoverPass.Models"  
              x:Name="BrowseItemsPage">
+    
+    
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
+        <ToolbarItem Text="Add New Class" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
     <!--
       x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
@@ -22,13 +25,19 @@
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Item">
                         <Label Text="{Binding Text}" 
-                            LineBreakMode="NoWrap" 
+                            LineBreakMode="NoWrap"
+                            TextColor="{DynamicResource Gray-White}"
                             Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="16" />
+                            FontSize="25" />
                         <Label Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
+                            TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" />
+                            FontSize="20"/>
+                        <StackLayout Orientation="Vertical">
+               
+                            <BoxView HeightRequest=".5" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"

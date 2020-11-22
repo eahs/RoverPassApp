@@ -26,11 +26,24 @@
 
     <!--  Common style for Content pages  -->
     <Style x:Key="ContentPageStyle" TargetType="ContentPage">
-        <Setter Property="BackgroundColor" Value="{OnIdiom Default={DynamicResource Gray-White}, Desktop={DynamicResource Gray-100}, Converter={StaticResource DynamicResourceToColorConverter}}" />
+        <Setter Property="BackgroundColor" Value="{OnIdiom Default={DynamicResource Red}, Desktop={DynamicResource Red}, Converter={StaticResource DynamicResourceToColorConverter}}" />
     </Style>
 
     <Style TargetType="control:TitleView">
-        <Setter Property="BackgroundColor" Value="{DynamicResource Gray-White}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource Red}" />
+    </Style>
+    <Style x:Key="DomesticShell"
+       TargetType="Element" >
+        <Setter Property="Shell.BackgroundColor"
+            Value="#FF0000" />
+        <Setter Property="Shell.ForegroundColor"
+            Value="Red" />
+        <Setter Property="Shell.TitleColor"
+            Value="Red" />
+        <Setter Property="Shell.DisabledColor"
+            Value="#FF0000" />
+        <Setter Property="Shell.UnselectedColor"
+            Value="#FF0000" />
     </Style>
 
     <!--  Common style for labels  -->
