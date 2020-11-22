@@ -10,8 +10,8 @@ namespace RoverPass.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string text;
-        private string description;
+        private string classCode;
+        
 
         public NewItemViewModel()
         {
@@ -23,21 +23,17 @@ namespace RoverPass.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+            return !String.IsNullOrWhiteSpace(classCode);
+              
         }
 
         public string Text
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => classCode;
+            set => SetProperty(ref classCode, value);
         }
 
-        public string Description
-        {
-            get => description;
-            set => SetProperty(ref description, value);
-        }
+        
 
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }
@@ -54,7 +50,7 @@ namespace RoverPass.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
-                Description = Description
+                
             };
 
             await DataStore.AddItemAsync(newItem);

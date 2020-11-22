@@ -2,13 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoverPass.Views.ItemDetailPage"
+              BackgroundColor="{DynamicResource Gray-Black}"
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Description}" FontSize="Small"/>
+        <Label Text="Class:" FontSize="Large"  TextColor="White"/>
+        <Label Text="{Binding Text}" FontSize="Large" TextColor="White"/>
+        <Label Text="Time:" FontSize="Large"  TextColor="White"/>
+        <Label Text="{Binding Description}" FontSize="Large" TextColor="White"/>
+        
+        
+        
+        <Button Text="Remove Class"
+                 TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
     </StackLayout>
     
 </ContentPage>
