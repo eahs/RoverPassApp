@@ -93,8 +93,16 @@
                 CornerRadius="20"
                 WidthRequest="150"
                 HeightRequest="75" />
+                <Button Text="Water Fountain"
+                TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
 
-            </StackLayout>
+                </StackLayout>
             </ScrollView>
 
         </ControlTemplate>

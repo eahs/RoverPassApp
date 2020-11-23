@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoverPass.Views.NewItemPage"
              Shell.PresentationMode="ModalAnimated"
+             BackgroundColor="{DynamicResource Gray-Black}"
              Title="New Class">
     <ContentPage.Content>
         <StackLayout Spacing="3" Padding="15">
-            <Label Text="Enter a Class Code" FontSize="Large" />
-            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
+            <Label Text="Enter a Class Code" FontSize="Large" TextColor="White"/>
+            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" BackgroundColor="White" />
             <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Cancel" Command="{Binding CancelCommand}" TextColor="Black"  BackgroundColor="White" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCommand}" TextColor="Black"  BackgroundColor="White" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
