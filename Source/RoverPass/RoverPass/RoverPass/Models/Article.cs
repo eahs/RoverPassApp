@@ -1,7 +1,6 @@
 ﻿using RoverPass.ViewModels;
 using Xamarin.Forms.Internals;
 
-
 namespace RoverPass.Models
 {
     /// <summary>
