@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms.Internals;
+﻿using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace RoverPass.Views.Destination
@@ -16,6 +17,11 @@ namespace RoverPass.Views.Destination
         public MyArticlePage()
         {
             InitializeComponent();
+        }
+
+        private async void Bathroom_Clicked(object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//BathroomPass");
         }
     }
 }

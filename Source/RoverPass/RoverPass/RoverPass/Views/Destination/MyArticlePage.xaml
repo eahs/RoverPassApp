@@ -43,7 +43,8 @@
                 BorderWidth="5"
                 CornerRadius="20"
                 WidthRequest="150"
-                HeightRequest="75" />
+                HeightRequest="75"
+                Clicked="Bathroom_Clicked"/>
                 <Button Text="Library"
                   TextColor="White"
                 BackgroundColor="Black"

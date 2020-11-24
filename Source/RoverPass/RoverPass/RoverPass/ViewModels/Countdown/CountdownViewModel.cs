@@ -13,7 +13,7 @@ namespace RoverPass.ViewModels
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
                 // Update timer property
-                countdownTime.Subtract(new TimeSpan(0, 0, 0, 1));
+                countdownTime = countdownTime.Subtract(new TimeSpan(0, 0, 1));
                 OnPropertyChanged("CountdownTime");
                 if (countdownTime.TotalSeconds <= 0)
                 {
