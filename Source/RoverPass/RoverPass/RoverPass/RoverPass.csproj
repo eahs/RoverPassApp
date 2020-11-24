@@ -34,8 +34,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\BathroomPass\BathroomPass.xaml.cs">
-      <DependentUpon>BathroomPass.xaml</DependentUpon>
+    <Compile Update="Views\Passes\BathroomPassPage.xaml.cs">
+      <DependentUpon>BathroomPassPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Destination\DestinationPage.xaml.cs">
+      <DependentUpon>DestinationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -49,13 +52,13 @@
     <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\BathroomPass\BathroomPass.xaml">
+    <EmbeddedResource Update="Views\Passes\BathroomPassPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\BathroomPass\Styles.xaml">
+    <EmbeddedResource Update="Views\Passes\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Destination\MyArticlePage.xaml">
+    <EmbeddedResource Update="Views\Destination\DestinationPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Destination\Styles.xaml">

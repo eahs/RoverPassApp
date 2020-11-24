@@ -88,7 +88,7 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
         <ShellContent Title="Manage Classes" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="Select Destination" Icon="tab_about.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:MyArticlePage}" />
+        <ShellContent Title="Select Destination" Icon="tab_about.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:DestinationPage}" />
         
     </FlyoutItem>
 

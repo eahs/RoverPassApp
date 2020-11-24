@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RoverPass.Views.Destination.DestinationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behavior="clr-namespace:RoverPass.Behaviors"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:controls="clr-namespace:RoverPass.Controls"
+    xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.Destination"
+    x:Name="myArticlePage"
+    BackgroundColor="{DynamicResource Gray-Black}"
+    NavigationPage.HasNavigationBar="False">
+    
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <viewModel:MyArticlePageViewModel />
+        
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Destination:" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+
+
+                <Button Text="Bathroom"
+                 TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75"
+                Clicked="Bathroom_Clicked"/>
+                <Button Text="Library"
+                  TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+                <Button Text="Guidance"
+                  TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+                <Button Text="Main office"
+                 TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+                <Button Text="Grade Level Office"
+                  TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+                <Button Text="PE Department"
+                  TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+                <Button Text="Teacher's Room"
+                 TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+                <Button Text="Water Fountain"
+                TextColor="White"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="150"
+                HeightRequest="75" />
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
