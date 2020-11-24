@@ -9,7 +9,7 @@ namespace RoverPass.ViewModels.BathroomPass
     /// ViewModel for My Article page 
     /// </summary> 
     [Preserve(AllMembers = true)]
-    public class BathroomPassViewModel : BaseViewModel
+    public class BathroomPassViewModel : CountdownViewModel
     {
         #region Fields        
 
@@ -34,7 +34,10 @@ namespace RoverPass.ViewModels.BathroomPass
 
             this.SearchCommand = new Command(this.SearchButtonClicked);
             this.ArticleListIteSelectionCommand = new Command(this.ArticleListItemClicked);
+
+            Start(new System.TimeSpan(0, 15, 0));
         }
+
 
         #endregion
 
@@ -100,4 +103,5 @@ namespace RoverPass.ViewModels.BathroomPass
 
         #endregion
     }
+
 }

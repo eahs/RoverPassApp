@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms.Internals;
+﻿using RoverPass.ViewModels;
+using System;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace RoverPass.Views.BathroomPass
@@ -16,6 +18,8 @@ namespace RoverPass.Views.BathroomPass
         public MyArticlePage()
         {
             InitializeComponent();
+
+        
         }
     }
 }

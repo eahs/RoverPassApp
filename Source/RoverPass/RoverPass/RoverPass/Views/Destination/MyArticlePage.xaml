@@ -27,8 +27,7 @@
         
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Select Your Destination:                                        " />
-        
+        <ToolbarItem Text="Destination:" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.ControlTemplate>
