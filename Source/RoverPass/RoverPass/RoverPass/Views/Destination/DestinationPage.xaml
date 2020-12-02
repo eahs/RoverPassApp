@@ -9,6 +9,7 @@
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.Destination"
+    Title="Select Your Desired Desination:"
     x:Name="myArticlePage"
     BackgroundColor="{DynamicResource Gray-Black}"
     NavigationPage.HasNavigationBar="False">
@@ -26,9 +27,7 @@
         <viewModel:MyArticlePageViewModel />
         
     </ContentPage.BindingContext>
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Destination:" Command="{Binding AddItemCommand}" />
-    </ContentPage.ToolbarItems>
+    
 
     <ContentPage.Content>
 

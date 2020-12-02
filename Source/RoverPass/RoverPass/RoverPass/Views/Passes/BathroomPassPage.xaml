@@ -9,6 +9,7 @@
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.BathroomPass"
+    Title="Bathroom Pass"
     x:Name="myArticlePage"
     BackgroundColor="{DynamicResource Gray-Black}"
   
@@ -26,9 +27,7 @@
         <viewModel:BathroomPassViewModel />
     </ContentPage.BindingContext>
     
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Bathroom Pass" />
-    </ContentPage.ToolbarItems>
+    
  
     <ContentPage.Content>
         <StackLayout>
