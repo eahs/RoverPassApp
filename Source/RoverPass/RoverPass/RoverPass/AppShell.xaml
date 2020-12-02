@@ -3,6 +3,7 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:RoverPass.Views"
        xmlns:aboutus="clr-namespace:RoverPass.Views.AboutUs"
+       xmlns:passes="clr-namespace:RoverPass.Views.Passes"
        xmlns:destination="clr-namespace:RoverPass.Views.Destination"
        xmlns:login="clr-namespace:RoverPass.Views.Login"
        
@@ -89,7 +90,7 @@
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
         <ShellContent Title="Manage Classes" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="Select Destination" Icon="tab_about.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:DestinationPage}" />
-        
+        <ShellContent Title="Pass" Icon="tab_about.png" Route="BathroomPass" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
