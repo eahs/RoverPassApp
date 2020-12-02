@@ -31,6 +31,11 @@ namespace RoverPass.Helpers
                 }
                 catch (Exception e)
                 {
+                    if (e != null)
+                    {
+
+                    }
+
                     // Come on man.. how do you crash while logging a crash?
                     // Microsoft.AppCenter.Crashes.Crashes.TrackError(e);
                 }
