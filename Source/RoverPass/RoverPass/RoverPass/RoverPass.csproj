@@ -34,6 +34,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ManageClasses\ItemDetailPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ManageClasses\ItemsPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ManageClasses\NewItemPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
     <Compile Update="Views\Passes\BathroomPassPage.xaml.cs">
       <DependentUpon>BathroomPassPage.xaml</DependentUpon>
     </Compile>

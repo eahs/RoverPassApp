@@ -12,7 +12,7 @@ using RoverPass.Views;
 using RoverPass.ViewModels;
 
 
-namespace RoverPass.Views
+namespace RoverPass.Views.ManageClasses
 {
     public partial class ItemsPage : ContentPage
     {
