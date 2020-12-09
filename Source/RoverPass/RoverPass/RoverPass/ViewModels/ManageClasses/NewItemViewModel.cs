@@ -10,8 +10,9 @@ namespace RoverPass.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string classCode;
-        
+        private string teacher;
+        private string block;
+        private string className;
 
         public NewItemViewModel()
         {
@@ -23,17 +24,28 @@ namespace RoverPass.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(classCode);
-              
-        }
-
-        public string Text
-        {
-            get => classCode;
-            set => SetProperty(ref classCode, value);
+            return !String.IsNullOrWhiteSpace(teacher)
+                && !String.IsNullOrWhiteSpace(block)
+                && !String.IsNullOrWhiteSpace(className);
         }
 
         
+        public string Text
+        {
+            get => teacher;
+            set => SetProperty(ref teacher, value);
+        }
+        public string Block
+        {
+            get => block;
+            set => SetProperty(ref block, value);
+        }
+        public string ClassName
+        {
+            get => className;
+            set => SetProperty(ref className, value);
+        }
+
 
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }

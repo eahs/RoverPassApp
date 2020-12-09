@@ -11,7 +11,7 @@
     
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add New Class" Command="{Binding AddItemCommand}" />
+        <ToolbarItem Text="Create a  New Class" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
     <!--
       x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
@@ -24,16 +24,20 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Item">
+                        
+                        
+                        
                         <Label Text="{Binding Text}" 
-                            LineBreakMode="NoWrap"
-                            TextColor="{DynamicResource Gray-White}"
-                            Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="25" />
-                        <Label Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
                             TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="20"/>
+                        <Label Text="{Binding Description}" 
+                            LineBreakMode="NoWrap"
+                            TextColor="{DynamicResource Gray-White}" 
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="22.5"/>
+                        
                         <StackLayout Orientation="Vertical">
                
                             <BoxView HeightRequest=".5" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
