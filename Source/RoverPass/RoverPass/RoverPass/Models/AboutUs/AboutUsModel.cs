@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using Xamarin.Forms.Internals;
 
+
 namespace RoverPass.Models.AboutUs
 {
     /// <summary>

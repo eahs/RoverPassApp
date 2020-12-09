@@ -1,3 +1,6 @@
+using Syncfusion.XForms.iOS.Core;
+using Syncfusion.XForms.iOS.Cards;
+using Syncfusion.SfRating.XForms.iOS;
 using  Syncfusion.XForms.iOS.Graphics;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.ListView.XForms.iOS;
@@ -28,6 +31,9 @@ namespace RoverPass.iOS
         {
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
+            Core.Init();
+            SfCardViewRenderer.Init();
+            SfRatingRenderer.Init();
             SfGradientViewRenderer.Init();
             SfButtonRenderer.Init();
             SfListViewRenderer.Init();

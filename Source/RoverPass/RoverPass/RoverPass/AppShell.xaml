@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:local="clr-namespace:RoverPass.Views"
        xmlns:aboutus="clr-namespace:RoverPass.Views.AboutUs"
+       xmlns:passes="clr-namespace:RoverPass.Views.Passes"
+       xmlns:destination="clr-namespace:RoverPass.Views.Destination"
        xmlns:login="clr-namespace:RoverPass.Views.Login"
-       Title="RoverPass"
+       xmlns:notification="clr-namespace:RoverPass.Views.Notification"
+       xmlns:manageclasses="clr-namespace:RoverPass.Views.ManageClasses"
+
+       
+       Title = "RoverPass"
        x:Class="RoverPass.AppShell">
 
     <!--
@@ -16,12 +21,12 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Gray-Black}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Gray-Black}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
@@ -49,7 +54,7 @@
                             </VisualState>
                             <VisualState x:Name="Selected">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Gray-Black}" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -82,8 +87,11 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
-        <ShellContent Title="Browse" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
+        <ShellContent Title="Location" Icon="tab_about.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:DestinationPage}" />
+        <ShellContent Title="Pass" Icon="tab_about.png" Route="BathroomPass" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
+        <ShellContent Title="Noti" Icon="tab_about.png" Route="Notification" ContentTemplate="{DataTemplate notification:TaskNotificationPage}" />
+        <ShellContent Title="Manage Classes" Icon="tab_about.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

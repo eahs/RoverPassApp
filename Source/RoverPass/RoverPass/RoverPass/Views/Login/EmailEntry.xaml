@@ -7,6 +7,7 @@
     xmlns:control="clr-namespace:RoverPass.Controls"
     xmlns:converter="clr-namespace:RoverPass.Converters">
 
+    
     <ContentView.Resources>
         <ResourceDictionary>
             <converter:StringToBooleanConverter x:Key="StringToBooleanConverter" />

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using RoverPass.ViewModels;
 using RoverPass.Views;
+using RoverPass.Views.Passes;
 using Xamarin.Forms;
+
 
 namespace RoverPass
 {
@@ -11,6 +13,8 @@ namespace RoverPass
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("BathroomPassPage", typeof(BathroomPassPage));
+
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
         }

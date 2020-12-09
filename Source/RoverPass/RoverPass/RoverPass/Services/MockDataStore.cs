@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using RoverPass.Models;
 
+
 namespace RoverPass.Services
 {
     public class MockDataStore : IDataStore<Item>
@@ -14,12 +15,12 @@ namespace RoverPass.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "AP Lang", Description="First Block" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "AP World", Description="Second Block" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Advanced Data Structures", Description="Third Block" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Advisory", Description="Fourth Block" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Honors Chemistry", Description="Fifth Block" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "AP Calc BC", Description="Fifth Block" }
             };
         }
 

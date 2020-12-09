@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml;
 
+
 namespace RoverPass.Helpers
 {
     public static class ErrorLogger
@@ -30,6 +31,11 @@ namespace RoverPass.Helpers
                 }
                 catch (Exception e)
                 {
+                    if (e != null)
+                    {
+
+                    }
+
                     // Come on man.. how do you crash while logging a crash?
                     // Microsoft.AppCenter.Crashes.Crashes.TrackError(e);
                 }

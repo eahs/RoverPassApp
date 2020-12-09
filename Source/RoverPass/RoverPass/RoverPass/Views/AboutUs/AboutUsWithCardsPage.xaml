@@ -54,13 +54,9 @@
                     Aspect="Fill"
                     BackgroundColor="{DynamicResource Gray-200}"
                     HeightRequest="253"
-                    HorizontalOptions="Fill">
-                      <Image.Source>
-                         <UriImageSource Uri="{Binding CardsTopImage}"
-                                 CacheValidity="14"
-                                 CachingEnabled="true"/>
-                      </Image.Source>
-                </Image>
+                    HorizontalOptions="Fill"
+                    Source="{Binding CardsTopImage}"
+                                />
 
                 <!--  Product name and description  -->
                 <control:CustomShadowFrame
@@ -111,7 +107,7 @@
                         FontFamily="{StaticResource Montserrat-Bold}"
                         FontSize="20"
                         Style="{StaticResource HeaderLabelStyle}"
-                        Text="Our Team" />
+                        Text="Meet The Developers" />
                 </StackLayout>
                 <!--  Employee profiles  -->
                 <listView:SfListView
@@ -137,7 +133,7 @@
                             <control:CustomShadowFrame
                                 Margin="12"
                                 BackgroundColor="White"
-                                BorderColor="White"
+                                BorderColor="Black"
                                 CornerRadius="4"
                                 HasShadow="true"
                                 HeightRequest="160"
@@ -168,14 +164,15 @@
                                         HorizontalOptions="Center"
                                         Style="{StaticResource DescriptionLabelStyle}"
                                         Text="{Binding EmployeeName}"
-                                        TextColor="{DynamicResource Gray-900}" />
+                                        TextColor="{DynamicResource Gray-Black}" />
 
                                     <!--  Designation  -->
                                     <Label
                                         HorizontalOptions="Center"
                                         HorizontalTextAlignment="Center"
                                         Style="{StaticResource VersionLabelStyle}"
-                                        Text="{Binding Designation}" />
+                                        Text="{Binding Designation}" 
+                                        TextColor="{DynamicResource Gray-Black}" />
 
                                 </StackLayout>
                             </control:CustomShadowFrame>
