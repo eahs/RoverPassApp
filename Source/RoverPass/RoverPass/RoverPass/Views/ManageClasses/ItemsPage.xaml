@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoverPass.Views.ManageClasses.ItemsPage"
              Title="{Binding Title}"
-             BackgroundColor="DarkRed"
+             BackgroundColor="Black"
              xmlns:local="clr-namespace:RoverPass.ViewModels"  
              xmlns:model="clr-namespace:RoverPass.Models"  
              x:Name="BrowseItemsPage">

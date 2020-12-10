@@ -16,7 +16,7 @@ namespace RoverPass
         {
             Barrel.ApplicationId = "roverpass";
 
-            //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("[YOUR LICENSE HERE]");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzY0ODI2QDMxMzgyZTMzMmUzMEhocnBHeEZYdVpiWDFtUTk5SzJtN0E2VCtLR2ZsSEFIcTlkMTRReW5NZm89");
 
             InitializeComponent();
 

@@ -48,7 +48,7 @@
 
                          TextColor="White"
                          BackgroundColor="Black"
-                         BorderColor="DarkRed"
+                         BorderColor="White"
                          BorderWidth="5"
                          CornerRadius="20"
                          WidthRequest="150"
@@ -57,7 +57,7 @@
                     <Button Text="End Pass"
                         TextColor="White"
                          BackgroundColor="Black"
-                         BorderColor="DarkRed"
+                         BorderColor="White"
                          BorderWidth="5"
                          CornerRadius="20"
                          WidthRequest="150"
