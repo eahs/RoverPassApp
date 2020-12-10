@@ -153,6 +153,9 @@
     <PackageReference Include="Syncfusion.Xamarin.Core">
       <Version>18.3.0.50</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.DataSource">
+      <Version>18.3.0.50</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
       <Version>18.3.0.50</Version>
     </PackageReference>

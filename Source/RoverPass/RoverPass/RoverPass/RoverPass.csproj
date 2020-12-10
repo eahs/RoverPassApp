@@ -6,10 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\navigation.json" />
     <None Remove="Data\notification.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Data\navigation.json" />
     <EmbeddedResource Include="Data\notification.json" />
   </ItemGroup>
 
@@ -19,6 +21,7 @@
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.3.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.Cards" Version="18.3.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.3.0.50" />
+    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="18.3.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.3.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.3.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="18.3.0.50" />
@@ -31,6 +34,7 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="Views\Passes\AprovalPass\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +46,9 @@
     </Compile>
     <Compile Update="Views\ManageClasses\NewItemPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PassAproval\PassAprove.xaml.cs">
+      <DependentUpon>PassAprove.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Passes\BathroomPassPage.xaml.cs">
       <DependentUpon>BathroomPassPage.xaml</DependentUpon>
@@ -65,6 +72,12 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Notification\TaskNotificationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PassAproval\PassAprove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PassAproval\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Passes\BathroomPassPage.xaml">
