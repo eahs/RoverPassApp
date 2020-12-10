@@ -34,10 +34,12 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Views\Passes\AprovalPass\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\PassAproval\PassAproval.xaml.cs">
+      <DependentUpon>PassAproval.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ManageClasses\ItemDetailPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
@@ -46,9 +48,6 @@
     </Compile>
     <Compile Update="Views\ManageClasses\NewItemPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
-    </Compile>
-    <Compile Update="Views\PassAproval\PassAprove.xaml.cs">
-      <DependentUpon>PassAprove.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Passes\BathroomPassPage.xaml.cs">
       <DependentUpon>BathroomPassPage.xaml</DependentUpon>
@@ -68,16 +67,16 @@
     <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\PassAproval\PassAproval.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PassAproval\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Notification\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Notification\TaskNotificationPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\PassAproval\PassAprove.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\PassAproval\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Passes\BathroomPassPage.xaml">

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using RoverPass.ViewModels;
 using RoverPass.Views;
+using RoverPass.Views.PassAproval;
 using RoverPass.Views.Passes;
 using Xamarin.Forms;
 
@@ -14,6 +15,7 @@ namespace RoverPass
         {
             InitializeComponent();
             Routing.RegisterRoute("BathroomPassPage", typeof(BathroomPassPage));
+            Routing.RegisterRoute("PassAproval", typeof(PassAproval));
 
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));

@@ -51,7 +51,8 @@
                 BorderWidth="5"
                 CornerRadius="20"
                 WidthRequest="150"
-                HeightRequest="75" />
+                HeightRequest="75"
+                Clicked="library_Clicked"/>
                 <Button Text="Guidance"
                   TextColor="White"
                 BackgroundColor="Black"

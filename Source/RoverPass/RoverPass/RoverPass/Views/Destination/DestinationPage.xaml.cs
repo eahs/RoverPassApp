@@ -23,5 +23,10 @@ namespace RoverPass.Views.Destination
         {
             await Shell.Current.GoToAsync("BathroomPassPage");
         }
+        private async void library_Clicked(object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync("PassAproval");
+        }
+
     }
 }
