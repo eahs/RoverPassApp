@@ -340,4 +340,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\JoshProfile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\destination.png" />
+  </ItemGroup>
 </Project>
