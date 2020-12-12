@@ -36,32 +36,34 @@
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Horizontal" VerticalOptions="Start">
                     <!-- top controls -->
-                    <Label Text="Destination Selected: Bathroom"  FontSize="Large" TextColor="White" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+                    
+                    
 
                 </StackLayout>
                 <StackLayout VerticalOptions="CenterAndExpand">
                     <!-- middle controls -->
-
-                    <Label Text="{Binding CountdownTime}"  FontSize="Large" TextColor="White" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+                    <Label  Text="Time Remaining:"  FontSize="45" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+                    <Label  Text="{Binding CountdownTime}"  FontSize="40" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
 
                     <Button Text="Start Pass"
-
+                         FontSize="22"
                          TextColor="White"
                          BackgroundColor="Black"
                          BorderColor="White"
-                         BorderWidth="5"
-                         CornerRadius="20"
-                         WidthRequest="150"
-                         HeightRequest="75" 
+                         BorderWidth="7"
+                         CornerRadius="35"
+                         WidthRequest="2"
+                         HeightRequest="150" 
                          Clicked="StartPass_Clicked"/>
                     <Button Text="End Pass"
+                            FontSize="22"
                         TextColor="White"
-                         BackgroundColor="Black"
+                        BackgroundColor="Black"
                          BorderColor="White"
-                         BorderWidth="5"
-                         CornerRadius="20"
-                         WidthRequest="150"
-                         HeightRequest="75" 
+                         BorderWidth="7"
+                         CornerRadius="35"
+                         WidthRequest="2"
+                         HeightRequest="150" 
                          Clicked="EndPass_Clicked"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="End">

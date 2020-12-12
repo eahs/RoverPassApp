@@ -27,7 +27,7 @@ namespace RoverPass.Views.Passes
 
         private void StartPass_Clicked(object sender, EventArgs e)
         {
-            vm.Start(new TimeSpan(0, 15, 0));
+            vm.Start(new TimeSpan(0, 10, 0));
         }
 
         private void EndPass_Clicked(object sender, EventArgs e)

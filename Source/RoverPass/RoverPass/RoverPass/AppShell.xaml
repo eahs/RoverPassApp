@@ -7,8 +7,6 @@
        xmlns:login="clr-namespace:RoverPass.Views.Login"
        xmlns:manageclasses="clr-namespace:RoverPass.Views.ManageClasses"
        xmlns:passaproval="clr-namespace:RoverPass.Views.PassAproval"
-   
-       
        Title = "RoverPass"
        x:Class="RoverPass.AppShell">
 
@@ -91,8 +89,6 @@
         <ShellContent Title="Location" Icon="destinationI.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:DestinationPage}" />
         <ShellContent Title="Pass" Icon="pass.png" Route="BathroomPass" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
         <ShellContent Title="Manage Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
-        <ShellContent Title="APass" Icon="pass.png" Route="PassAproval" ContentTemplate="{DataTemplate passaproval:PassAproval}" />
-
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
