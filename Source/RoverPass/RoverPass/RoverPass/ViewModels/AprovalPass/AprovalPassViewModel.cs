@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
-using Model = RoverPass.Models.Article;
+using Model = RoverPass.Models.RequestPage;
 
 namespace RoverPass.ViewModels.AprovalPass
 {
