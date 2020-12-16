@@ -91,7 +91,7 @@
         <ShellContent Title="Pass" Icon="pass.png" Route="BathroomPass" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
         <ShellContent Title="Manage Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
         <ShellContent Title="R Page" Icon="classroom.png" Route="RequestPAge" ContentTemplate="{DataTemplate requestpage:RequestPage}" />
-        <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:AboutUsSimplePage}" />
+        <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
 
     </FlyoutItem>
 

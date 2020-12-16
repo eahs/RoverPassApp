@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms.Internals;
+﻿using System;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace RoverPass.Views.QueuePage
@@ -8,14 +9,16 @@ namespace RoverPass.Views.QueuePage
     /// </summary>
     [Preserve(AllMembers = true)]
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AboutUsSimplePage
+    public partial class PassQueue
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="T:RoverPass.Views.QueuePage.AboutUsSimplePage"/> class.
         /// </summary>
-        public AboutUsSimplePage()
+        public PassQueue()
         {
             InitializeComponent();
         }
+
+     
     }
 }

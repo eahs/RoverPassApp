@@ -7,7 +7,7 @@ namespace RoverPass.Models.QueuePage
     /// Model for About us templates.
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class AboutUsModel : INotifyPropertyChanged
+    public class PassQueueModel : INotifyPropertyChanged
     {
         #region Fields
 

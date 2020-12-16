@@ -51,6 +51,9 @@
     <Compile Update="Views\Destination\DestinationPage.xaml.cs">
       <DependentUpon>DestinationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\QueuePage\PassQueue.xaml.cs">
+      <DependentUpon>PassQueue.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\RequestPage\RequestPage.xaml.cs">
       <DependentUpon>RequestPage.xaml</DependentUpon>
     </Compile>
@@ -105,7 +108,7 @@
     <EmbeddedResource Update="Views\NotificationPage\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\QueuePage\AboutUsSimplePage.xaml">
+    <EmbeddedResource Update="Views\QueuePage\PassQueue.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\QueuePage\Styles.xaml">

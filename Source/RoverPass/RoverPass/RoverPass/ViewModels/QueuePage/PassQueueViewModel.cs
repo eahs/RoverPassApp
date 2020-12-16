@@ -9,7 +9,7 @@ namespace RoverPass.ViewModels.QueuePage
     /// ViewModel of AboutUs templates.
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class AboutUsViewModel : BaseViewModel
+    public class PassQueueViewModel : BaseViewModel
     {
         #region Fields
 
@@ -28,7 +28,7 @@ namespace RoverPass.ViewModels.QueuePage
         /// <summary>
         /// Initializes a new instance for the <see cref="T:RoverPass.ViewModels.QueuePage.AboutUsViewModel"/> class.
         /// </summary>
-        public AboutUsViewModel()
+        public PassQueueViewModel()
         {
             this.productDescription =
                 "Situated in the heart of Smith-town, Acme Products, Inc., has a long-standing tradition of selling the best products while providing the fastest service on the market. Since 1952, we’ve helped our customers identify their needs, understand their wants, and capture their dreams.";
@@ -36,57 +36,57 @@ namespace RoverPass.ViewModels.QueuePage
             this.productVersion = "1.0";
             this.cardsTopImage = App.BaseImageUrl + "Mask.png";
 
-            this.EmployeeDetails = new ObservableCollection<AboutUsModel>
+            this.EmployeeDetails = new ObservableCollection<PassQueueModel>
             {
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Alice",
                     Image = App.BaseImageUrl + "ProfileImage15.png",
                     Designation = "Project Manager"
                 },
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Jessica Park",
                     Image = App.BaseImageUrl + "ProfileImage10.png",
                     Designation = "Senior Manager"
                 },
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Lisa",
                     Image = App.BaseImageUrl + "ProfileImage11.png",
                     Designation = "Senior Developer"
                 },
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Rebecca",
                     Image = App.BaseImageUrl + "ProfileImage12.png",
                     Designation = "Senior Designer"
                 },
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Alexander",
                     Image = App.BaseImageUrl + "ProfileImage3.png",
                     Designation = "Senior Manager"
                 },
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Anthony",
                     Image = App.BaseImageUrl + "ProfileImage1.png",
                     Designation = "Senior Developer"
                 },
-                new AboutUsModel
+                new PassQueueModel
                 {
                     EmployeeName = "Danielle",
                     Image = App.BaseImageUrl + "ProfileImage7.png",
                     Designation = "Senior Developer"
                 },
-                 new AboutUsModel
+                 new PassQueueModel
                 {
                     EmployeeName = "Kyle Greene",
                     Image = App.BaseImageUrl + "ProfileImage6.png",
                     Designation = "Senior Developer"
                 },
-                  new AboutUsModel
+                  new PassQueueModel
                 {
                     EmployeeName = "Navya Sharma",
                     Image = App.BaseImageUrl + "ProfileImage13.png",
@@ -177,7 +177,7 @@ namespace RoverPass.ViewModels.QueuePage
         /// Gets or sets the employee details.
         /// </summary>
         /// <value>The employee details.</value>
-        public ObservableCollection<AboutUsModel> EmployeeDetails { get; set; }
+        public ObservableCollection<PassQueueModel> EmployeeDetails { get; set; }
 
         /// <summary>
         /// Gets or sets the command that will be executed when an item is selected.
