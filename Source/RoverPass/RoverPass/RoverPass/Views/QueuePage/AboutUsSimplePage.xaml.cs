@@ -1,20 +1,19 @@
 ﻿using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
-namespace RoverPass.Views.RequestPage
-
+namespace RoverPass.Views.QueuePage
 {
     /// <summary>
-    /// Class helps to reduce repetitive markup, and allows an apps appearance to be more easily changed.
+    /// About us simple page.
     /// </summary>
     [Preserve(AllMembers = true)]
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Styles
+    public partial class AboutUsSimplePage
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Styles" /> class.
+        /// Initializes a new instance of the <see cref="T:RoverPass.Views.QueuePage.AboutUsSimplePage"/> class.
         /// </summary>
-        public Styles()
+        public AboutUsSimplePage()
         {
             InitializeComponent();
         }

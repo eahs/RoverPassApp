@@ -8,9 +8,11 @@
     xmlns:controls="clr-namespace:RoverPass.Controls"
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.RequestPage"
-    x:Name="RequestPage"
-    BackgroundColor="{DynamicResource Gray-White}"
+    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.BathroomPass"
+    Title="Pass Request Page"
+    x:Name="myArticlePage"
+    BackgroundColor="{DynamicResource Gray-Black}"
+  
     NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Resources>
@@ -22,8 +24,10 @@
     </ContentPage.Resources>
 
     <ContentPage.BindingContext>
-        <viewModel:RequestPageViewModel />
+        <viewModel:BathroomPassViewModel />
     </ContentPage.BindingContext>
+
+
 
     <ContentPage.Content>
         <StackLayout>
@@ -32,24 +36,35 @@
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Horizontal" VerticalOptions="Start">
                     <!-- top controls -->
-                    <Label Text="Destination Selected: Library"  FontSize="Large" TextColor="White" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+
+
 
                 </StackLayout>
                 <StackLayout VerticalOptions="CenterAndExpand">
                     <!-- middle controls -->
+                    <Label  Text="Time Remaining:"  FontSize="45" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+                   
 
-
-                    <Button Text="Send Request For this Pass"
-
+                    <Button Text="Start Pass"
+                         FontSize="22"
                          TextColor="White"
                          BackgroundColor="Black"
                          BorderColor="White"
-                         BorderWidth="5"
-                         CornerRadius="20"
-                         WidthRequest="150"
-                         HeightRequest="100" />
-
-
+                         BorderWidth="7"
+                         CornerRadius="35"
+                         WidthRequest="2"
+                         HeightRequest="150" 
+                        />
+                    <Button Text="End Pass"
+                            FontSize="22"
+                        TextColor="White"
+                        BackgroundColor="Black"
+                         BorderColor="White"
+                         BorderWidth="7"
+                         CornerRadius="35"
+                         WidthRequest="2"
+                         HeightRequest="150" 
+                         />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="End">
                     <!-- bottom controls -->

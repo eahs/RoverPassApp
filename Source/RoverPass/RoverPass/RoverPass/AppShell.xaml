@@ -7,6 +7,7 @@
        xmlns:login="clr-namespace:RoverPass.Views.Login"
        xmlns:manageclasses="clr-namespace:RoverPass.Views.ManageClasses"
        xmlns:requestpage="clr-namespace:RoverPass.Views.RequestPage"
+       xmlns:queuepage="clr-namespace:RoverPass.Views.QueuePage"
        Title = "RoverPass"
        x:Class="RoverPass.AppShell">
 
@@ -89,7 +90,8 @@
         <ShellContent Title="Location" Icon="destinationI.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:DestinationPage}" />
         <ShellContent Title="Pass" Icon="pass.png" Route="BathroomPass" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
         <ShellContent Title="Manage Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
-        <ShellContent Title="Request Page" Icon="classroom.png" Route="RequestPage" ContentTemplate="{DataTemplate requestpage:RequestPage}" />
+        <ShellContent Title="R Page" Icon="classroom.png" Route="RequestPAge" ContentTemplate="{DataTemplate requestpage:RequestPage}" />
+        <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:AboutUsSimplePage}" />
 
     </FlyoutItem>
 

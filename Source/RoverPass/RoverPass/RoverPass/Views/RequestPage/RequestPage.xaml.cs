@@ -5,18 +5,23 @@ using Xamarin.Forms.Xaml;
 namespace RoverPass.Views.RequestPage
 {
     /// <summary>
-    /// Article with comments page.
+    /// Page to show the article profile
     /// </summary>
     [Preserve(AllMembers = true)]
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RequestPage
+    public partial class ProfilePage
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Page"/> class.
+        /// Initializes a new instance of the <see cref="ProfilePage" /> class.
         /// </summary>
-        public RequestPage()
+        public ProfilePage()
         {
-            //InitializeComponent();
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
     }
 }

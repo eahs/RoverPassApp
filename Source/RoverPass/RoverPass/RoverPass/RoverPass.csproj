@@ -33,13 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Views\RequestPage\RequestPage.xaml.cs">
-      <DependentUpon>RequestPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Views\PassAproval\PassAproval.xaml.cs">
       <DependentUpon>PassAproval.xaml</DependentUpon>
     </Compile>
@@ -58,6 +51,9 @@
     <Compile Update="Views\Destination\DestinationPage.xaml.cs">
       <DependentUpon>DestinationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\RequestPage\RequestPage.xaml.cs">
+      <DependentUpon>RequestPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -68,12 +64,6 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RequestPage\RequestPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RequestPage\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PassAproval\PassAproval.xaml">
@@ -113,6 +103,18 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\NotificationPage\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\QueuePage\AboutUsSimplePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\QueuePage\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RequestPage\RequestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RequestPage\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
