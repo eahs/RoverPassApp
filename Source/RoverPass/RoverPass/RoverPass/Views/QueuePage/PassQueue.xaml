@@ -1,74 +1,69 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="RoverPass.Views.QueuePage.PassQueue"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.QueuePage"
-    Title="Pass Queue"
-    BackgroundColor="{DynamicResource Gray-White}"
-    NavigationPage.HasNavigationBar="False">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
-    <ContentPage.Content>
-        <Grid ColumnSpacing="0" RowSpacing="0">
-            <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
-                <StackLayout
-                    HorizontalOptions="Center"
-                    Spacing="0"
-                    VerticalOptions="Center">
-
-                    <StackLayout.BindingContext>
-                        <viewModel:PassQueueViewModel />
-                    </StackLayout.BindingContext>
-
-<BoxView />
-                    <!--  Product image  -->
-                    <Image HeightRequest="110" WidthRequest="124">
-                        <Image.Source>
-                            <UriImageSource
-                                CacheValidity="14"
-                                CachingEnabled="true"
-                                Uri="{Binding ProductIcon}" />
-                        </Image.Source>
-                    </Image>
-
-                    <!--  Product version  -->
-                    <Label
-                        Margin="0,8.7,0,0"
-                        HorizontalOptions="CenterAndExpand"
-                        Style="{StaticResource VersionLabelStyle}"
-                        Text="{Binding ProductVersion, StringFormat='Version {0}'}" />
-
-                    <!--  Product title  -->
-                    <Label
-                        FontFamily="{StaticResource Montserrat-SemiBold}"
-                        HorizontalOptions="CenterAndExpand"
-                        Style="{StaticResource HeaderLabelStyle}"
-                        Text="Acme Products">
-                        <Label.Margin>
-                            <OnIdiom
-                                x:TypeArguments="Thickness"
-                                Default="0, 32, 0, 8"
-                                Phone="0, 16, 0, 16" />
-                        </Label.Margin>
-                       
-                    </Label>
-
-                    <!--  Product description  -->
-                    <Label
-                        Margin="15,0,15,0"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Style="{StaticResource DescriptionLabelStyle}"
-                        Text="{Binding ProductDescription}" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              x:Class="RoverPass.Views.QueuePage.PassQueue"
+             BackgroundColor="Black"
+             Title="Pass Queue">
+    <Grid>
+        
+        <StackLayout>
+            <Label  Text="     Pass Requests"  FontSize="25" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+            <Frame Margin="10"
+            BorderColor="White"
+            BackgroundColor="Black"
+            CornerRadius="10"
+            HeightRequest="200"
+            WidthRequest="150"
+            IsClippedToBounds="True"
+            HorizontalOptions="Start"
+            VerticalOptions="StartAndExpand">
+                <StackLayout>
+                    <Label  Text="Taranveer Flora - Library"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="LeBron James - PE Department"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Imaan Ali - Main Office"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Aidan Fleming - Guidance"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Joshua Averion - Nurse"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
                 </StackLayout>
-            </ScrollView>
-        </Grid>
-    </ContentPage.Content>
-</ContentPage>
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Label  Text="Active Passes     "  FontSize="25" TextColor="White" VerticalOptions="Center"  HorizontalOptions="End" />
+            <Frame Margin="10"
+            BorderColor="White"
+            BackgroundColor="Black"
+            CornerRadius="10"
+            HeightRequest="200"
+            WidthRequest="150"
+            IsClippedToBounds="True"
+            HorizontalOptions="End"
+            VerticalOptions="Center">
+                <StackLayout>
+                    <Label  Text="Anthony Davis - Bathroom"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="John Cena - Mr.Tanczos"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Joe Biden - Nurse"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Justin Gill - Guidance "  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Gianis Akumpo - Main Office"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                </StackLayout>
+            </Frame>
+            <Label  Text="     Class Pass History"  FontSize="25" TextColor="White" VerticalOptions="End"  HorizontalOptions="Start" />
+            <Frame Margin="10"
+            BorderColor="White"
+            BackgroundColor="Black"
+            CornerRadius="10"
+            HeightRequest="150"
+            WidthRequest="325"
+            IsClippedToBounds="True"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+                <StackLayout>
+                    <Label  Text="Anthony Davis - Bathroom - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="John Cena - Mr.Tanczos - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Joe Biden - Nurse - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Justin Gill - Guidance - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Gianis Akumpo - Main Office - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Dwayne Wade - Main Office - Ended"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>  
