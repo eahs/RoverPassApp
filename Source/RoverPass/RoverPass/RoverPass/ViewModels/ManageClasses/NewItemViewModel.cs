@@ -13,6 +13,8 @@ namespace RoverPass.ViewModels
         private string teacher;
         private string block;
         private string className;
+        //private string text;
+        
 
         public NewItemViewModel()
         {
@@ -30,7 +32,7 @@ namespace RoverPass.ViewModels
         }
 
         
-        public string Text
+        public string Teacher
         {
             get => teacher;
             set => SetProperty(ref teacher, value);
@@ -61,7 +63,9 @@ namespace RoverPass.ViewModels
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = Text,
+                Teacher = Teacher,
+                Block = Block,
+                ClassName = ClassName
                 
             };
 

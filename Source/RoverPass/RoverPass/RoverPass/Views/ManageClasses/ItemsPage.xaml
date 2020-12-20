@@ -27,16 +27,21 @@
                         
                         
                         
-                        <Label Text="{Binding Text}" 
+                        <Label Text="{Binding ClassName}" 
+                            LineBreakMode="NoWrap"
+                            TextColor="{DynamicResource Gray-White}" 
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="23"/>
+                        <Label Text="{Binding Teacher}" 
                             LineBreakMode="NoWrap"
                             TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="20"/>
-                        <Label Text="{Binding Description}" 
+                        <Label Text="{Binding Block}" 
                             LineBreakMode="NoWrap"
                             TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="22.5"/>
+                            FontSize="18"/>
                         
                         <StackLayout Orientation="Vertical">
                

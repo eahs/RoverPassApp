@@ -7,10 +7,11 @@
 
     <StackLayout Spacing="20" Padding="15">
         <Label Text="Class:" FontSize="Large"  TextColor="White"/>
-        <Label Text="{Binding Text}" FontSize="Large" TextColor="White"/>
-        <Label Text="Time:" FontSize="Large"  TextColor="White"/>
-        <Label Text="{Binding Description}" FontSize="Large" TextColor="White"/>
-        
+        <Label Text="{Binding ClassName}" FontSize="Large" TextColor="White"/>
+        <Label Text="Teacher:" FontSize="Large"  TextColor="White"/>
+        <Label Text="{Binding Teacher}" FontSize="Large" TextColor="White"/>
+        <Label Text="Block:" FontSize="Large"  TextColor="White"/>
+        <Label Text="{Binding Block}" FontSize="Large" TextColor="White"/>
         
         
         <Button Text="Remove Class"
