@@ -6,8 +6,8 @@
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Class:" FontSize="Large"  TextColor="White"/>
-        <Label Text="{Binding ClassName}" FontSize="Large" TextColor="White"/>
+        <Label Text="Class:" FontSize="Large"  TextColor="White"/><Label Text="{Binding ClassName}" FontSize="Large" TextColor="White"/>
+       
         <Label Text="Teacher:" FontSize="Large"  TextColor="White"/>
         <Label Text="{Binding Teacher}" FontSize="Large" TextColor="White"/>
         <Label Text="Block:" FontSize="Large"  TextColor="White"/>

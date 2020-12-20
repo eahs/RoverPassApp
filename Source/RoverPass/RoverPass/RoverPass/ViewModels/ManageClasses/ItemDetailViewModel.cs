@@ -11,20 +11,26 @@ namespace RoverPass.ViewModels
     public class ItemDetailViewModel : BaseViewModel
     {
         private string itemId;
-        private string text;
-        private string description;
+        private string teacher;
+        private string className;
+        private string block;
         public string Id { get; set; }
 
-        public string Text
+        public string Teacher
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => teacher;
+            set => SetProperty(ref teacher, value);
         }
 
-        public string Description
+        public string ClassName
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => className;
+            set => SetProperty(ref className, value);
+        }
+        public string Block
+        {
+            get => block;
+            set => SetProperty(ref block, value);
         }
 
         public string ItemId
@@ -46,8 +52,9 @@ namespace RoverPass.ViewModels
             {
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Teacher = item.Teacher;
+                ClassName = item.ClassName;
+                Block = item.Block;
             }
             catch (Exception)
             {
