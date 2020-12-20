@@ -34,6 +34,7 @@ namespace RoverPass.Models.QueuePage
         /// Gets or sets the name of an employee.
         /// </summary>
         /// <value>The name.</value>
+        
         public string EmployeeName
         {
             get

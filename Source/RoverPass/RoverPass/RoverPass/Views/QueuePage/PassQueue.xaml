@@ -17,7 +17,9 @@
             IsClippedToBounds="True"
             HorizontalOptions="Start"
             VerticalOptions="StartAndExpand">
+              
                 <StackLayout>
+
                     <Label  Text="Taranveer Flora - Library"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
                     <Label  Text="LeBron James - PE Department"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
                     <Label  Text="Imaan Ali - Main Office"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
