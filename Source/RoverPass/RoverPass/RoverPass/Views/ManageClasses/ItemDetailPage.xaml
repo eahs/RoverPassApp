@@ -3,25 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoverPass.Views.ItemDetailPage"
              BackgroundColor="Black"
-             Title="{Binding Title}">
+             Title="Class Description">
+    <StackLayout>
 
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Class:" FontSize="Large"  TextColor="White"/><Label Text="{Binding ClassName}" FontSize="Large" TextColor="White"/>
-       
-        <Label Text="Teacher:" FontSize="Large"  TextColor="White"/>
-        <Label Text="{Binding Teacher}" FontSize="Large" TextColor="White"/>
-        <Label Text="Block:" FontSize="Large"  TextColor="White"/>
-        <Label Text="{Binding Block}" FontSize="Large" TextColor="White"/>
-        
-        
-        <Button Text="Remove Class"
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout  VerticalOptions="Start">
+                <!-- top controls -->
+                
+                <Label Text="Class Name:" FontSize="30"  TextColor="White"/>
+                <Label Text="{Binding ClassName}" FontSize="25" TextColor="White"/>
+                <Label Text="Teacher:" FontSize="30"  TextColor="White"/>
+                <Label Text="{Binding Teacher}" FontSize="25" TextColor="White"/>
+                <Label Text="Block:" FontSize="30"  TextColor="White"/>
+                <Label Text="{Binding Block}" FontSize="25" TextColor="White"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <!-- middle controls -->               
+            </StackLayout>
+            <StackLayout  VerticalOptions="End">
+                <!-- bottom controls -->
+                <Button Text="Remove Class"
                  TextColor="White"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
-                HeightRequest="75" />
+                WidthRequest="375"
+                HeightRequest="100" />
+
+            </StackLayout>
+        </StackLayout>
+
     </StackLayout>
+    
     
 </ContentPage>
