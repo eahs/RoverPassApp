@@ -37,7 +37,7 @@
                 <StackLayout  VerticalOptions="Start">
                     <!-- top controls -->
                     <Label  Text="Time Remaining:"  FontSize="45" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
-                    <Label  Text="{Binding CountdownTime}"  FontSize="40" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+                    <Label  Text="{Binding CountdownTime}"  FontSize="55" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
                     
 
                 </StackLayout>
