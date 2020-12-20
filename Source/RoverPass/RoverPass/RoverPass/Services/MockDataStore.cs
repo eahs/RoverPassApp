@@ -15,12 +15,12 @@ namespace RoverPass.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "AP Lang", Description="First Block" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "AP World", Description="Second Block" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Advanced Data Structures", Description="Third Block" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Advisory", Description="Fourth Block" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Honors Chemistry", Description="Fifth Block" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "AP Calc BC", Description="Fifth Block" }
+                new Item { Id = Guid.NewGuid().ToString(), ClassName = "AP Lang", Teacher = "Mrs.Morgans", Block="First Block" },
+                new Item { Id = Guid.NewGuid().ToString(), ClassName = "AP World",Teacher = "Mrs.Koser", Block="Second Block" },
+                new Item { Id = Guid.NewGuid().ToString(), ClassName = "Advanced Data Structures",Teacher = "Mr.Tanczos", Block="Third Block" },
+                new Item { Id = Guid.NewGuid().ToString(), ClassName = "Advisory", Teacher = "Mr.Tanczos",Block="Fourth Block" },
+                new Item { Id = Guid.NewGuid().ToString(), ClassName = "Honors Chemistry",Teacher = "Mrs.Warner", Block="Fifth Block" },
+                new Item { Id = Guid.NewGuid().ToString(), ClassName = "AP Calc BC",Teacher = "Mr.Wright", Block="Fifth Block" }
             };
         }
 
