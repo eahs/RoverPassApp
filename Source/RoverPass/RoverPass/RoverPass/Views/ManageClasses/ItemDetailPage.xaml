@@ -10,13 +10,21 @@
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <StackLayout  VerticalOptions="Start">
                 <!-- top controls -->
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Class Name:" FontSize="30"  TextColor="White"/>
+                    <Label Text="{Binding ClassName}" FontSize="30" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Teacher:" FontSize="30"  TextColor="White"/>
+                    <Label Text="{Binding Teacher}" FontSize="30" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Block:" FontSize="30"  TextColor="White"/>
+                    <Label Text="{Binding Block}" FontSize="30" TextColor="White"/>
+                </StackLayout>
                 
-                <Label Text="Class Name:" FontSize="30"  TextColor="White"/>
-                <Label Text="{Binding ClassName}" FontSize="25" TextColor="White"/>
-                <Label Text="Teacher:" FontSize="30"  TextColor="White"/>
-                <Label Text="{Binding Teacher}" FontSize="25" TextColor="White"/>
-                <Label Text="Block:" FontSize="30"  TextColor="White"/>
-                <Label Text="{Binding Block}" FontSize="25" TextColor="White"/>
+                
+                
             </StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
                 <!-- middle controls -->               
