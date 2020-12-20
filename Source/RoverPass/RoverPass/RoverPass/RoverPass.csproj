@@ -54,8 +54,8 @@
     <Compile Update="Views\QueuePage\PassQueue.xaml.cs">
       <DependentUpon>PassQueue.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\RequestPage\RequestPage.xaml.cs">
-      <DependentUpon>RequestPage.xaml</DependentUpon>
+    <Compile Update="Views\ClassesPage\Classes.xaml.cs">
+      <DependentUpon>Classes.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -114,10 +114,10 @@
     <EmbeddedResource Update="Views\QueuePage\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\RequestPage\RequestPage.xaml">
+    <EmbeddedResource Update="Views\ClassesPage\Classes.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\RequestPage\Styles.xaml">
+    <EmbeddedResource Update="Views\ClassesPage\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

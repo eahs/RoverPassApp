@@ -1,15 +1,15 @@
 ﻿using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
-using Model = RoverPass.Models.RequestPage;
+using Model = RoverPass.Models.ClassesPage;
 
-namespace RoverPass.ViewModels.RequestPage
+namespace RoverPass.ViewModels.ClassesPage
 {
     /// <summary>
     /// ViewModel for My Article page 
     /// </summary> 
     [Preserve(AllMembers = true)]
-    public class BathroomPassViewModel : CountdownViewModel
+    public class ClassesPageViewModel : CountdownViewModel
     {
         #region Fields        
 
@@ -25,7 +25,7 @@ namespace RoverPass.ViewModels.RequestPage
         /// <summary>
         /// Initializes a new instance of the <see cref="BathroomPassViewModel" /> class
         /// </summary>
-        public BathroomPassViewModel()
+        public ClassesPageViewModel()
         {
             this.articleList = new ObservableCollection<Model>
             {

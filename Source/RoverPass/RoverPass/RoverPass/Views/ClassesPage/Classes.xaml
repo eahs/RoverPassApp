@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RoverPass.Views.ClassesPage.Classes"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behavior="clr-namespace:RoverPass.Behaviors"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:controls="clr-namespace:RoverPass.Controls"
+    xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.ClassesPage"
+    Title="Classes"
+    x:Name="myArticlePage"
+    BackgroundColor="{DynamicResource Gray-Black}"
+  
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <viewModel:ClassesPageViewModel />
+    </ContentPage.BindingContext>
+
+
+
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="PreCalc"
+                 TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100"
+                Clicked="PreCalc_Clicked"/>
+                    <Button Text="Accounting"
+                TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100"
+                />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="ADS"
+                  TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                    <Button Text="Study Hall"
+                  TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Advisory"
+                  TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                    <Button Text="Lunch"
+                 TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Chemistry"
+                 TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                    <Button Text="Brit Lit"
+                 TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                </StackLayout>
+
+
+
+                <Button Text="Add New Class"
+                 TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

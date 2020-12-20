@@ -7,7 +7,7 @@ namespace RoverPass.Models
     /// Model for Article templates.
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class RequestPage : BaseViewModel
+    public class ClassesPage : BaseViewModel
     {
         #region Fields
 

@@ -1,7 +1,9 @@
-﻿using Xamarin.Forms.Internals;
+﻿using System;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
-namespace RoverPass.Views.RequestPage
+namespace RoverPass.Views.ClassesPage
+
 
 {
     /// <summary>
@@ -18,5 +20,7 @@ namespace RoverPass.Views.RequestPage
         {
             InitializeComponent();
         }
+
+        
     }
 }
