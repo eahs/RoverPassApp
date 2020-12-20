@@ -34,16 +34,16 @@
 
 
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                <StackLayout  VerticalOptions="Start">
                     <!-- top controls -->
-                    
+                    <Label  Text="Time Remaining:"  FontSize="45" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+                    <Label  Text="{Binding CountdownTime}"  FontSize="40" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
                     
 
                 </StackLayout>
                 <StackLayout VerticalOptions="CenterAndExpand">
                     <!-- middle controls -->
-                    <Label  Text="Time Remaining:"  FontSize="45" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
-                    <Label  Text="{Binding CountdownTime}"  FontSize="40" TextColor="White" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+                    
 
                     <Button Text="Start Pass"
                          FontSize="22"
