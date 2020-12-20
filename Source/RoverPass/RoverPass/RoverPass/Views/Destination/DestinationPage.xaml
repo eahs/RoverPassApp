@@ -33,83 +33,103 @@
 
         <ScrollView>
             <StackLayout>
-                
-
-
-                <Button Text="Bathroom"
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Bathroom"
                  TextColor="White"
                 FontSize="Large"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
+                WidthRequest="200"
                 HeightRequest="100"
                 Clicked="Bathroom_Clicked"/>
-                <Button Text="Library"
+                    <Button Text="Library"
                 TextColor="White"
                 FontSize="Large"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
+                WidthRequest="200"
                 HeightRequest="100"
                 Clicked="library_Clicked"/>
-                <Button Text="Guidance"
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Guidance"
                   TextColor="White"
                 FontSize="Large"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
+                WidthRequest="200"
                 HeightRequest="100" />
-                <Button Text="Main office"
+                    <Button Text="PE Department"
+                  TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Grade Level Office"
+                  TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+                    <Button Text="Main office"
                  TextColor="White"
                 FontSize="Large"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
+                WidthRequest="200"
                 HeightRequest="100" />
-                <Button Text="Grade Level Office"
-                  TextColor="White"
-                FontSize="Large"
-                BackgroundColor="Black"
-                BorderColor="White"
-                BorderWidth="5"
-                CornerRadius="20"
-                WidthRequest="150"
-                HeightRequest="100" />
-                <Button Text="PE Department"
-                  TextColor="White"
-                FontSize="Large"
-                BackgroundColor="Black"
-                BorderColor="White"
-                BorderWidth="5"
-                CornerRadius="20"
-                WidthRequest="150"
-                HeightRequest="100" />
-                <Button Text="Teacher's Room"
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Teacher's Room"
                  TextColor="White"
                 FontSize="Large"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
+                WidthRequest="200"
                 HeightRequest="100" />
-                <Button Text="Water Fountain"
-                TextColor="White"
+                    <Button Text="Water Fountain"
+                 TextColor="White"
                 FontSize="Large"
                 BackgroundColor="Black"
                 BorderColor="White"
                 BorderWidth="5"
                 CornerRadius="20"
-                WidthRequest="150"
+                WidthRequest="200"
                 HeightRequest="100" />
+                </StackLayout>
+
+
+
+                <Button Text="Other"
+                 TextColor="White"
+                FontSize="Large"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="5"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+
+
+
 
             </StackLayout>
         </ScrollView>
