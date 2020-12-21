@@ -88,10 +88,7 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
         <ShellContent Title="Classes" Icon="classroom.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
-        <ShellContent Title="Location" Icon="destinationI.png" Route="SelectDestination" ContentTemplate="{DataTemplate destination:DestinationPage}" />
-        <ShellContent Title="Pass" Icon="pass.png" Route="BathroomPass" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
         <ShellContent Title="(T)Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
-        
         <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
 
     </FlyoutItem>
