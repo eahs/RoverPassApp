@@ -3,11 +3,12 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:aboutus="clr-namespace:RoverPass.Views.AboutUs"
        xmlns:passes="clr-namespace:RoverPass.Views.Passes"
-       xmlns:destination="clr-namespace:RoverPass.Views.Destination"
+       xmlns:hallmonitor="clr-namespace:RoverPass.Views.HallMonitor"
        xmlns:login="clr-namespace:RoverPass.Views.Login"
        xmlns:manageclasses="clr-namespace:RoverPass.Views.ManageClasses"
        xmlns:classespage="clr-namespace:RoverPass.Views.ClassesPage"
        xmlns:queuepage="clr-namespace:RoverPass.Views.QueuePage"
+       
        Title = "RoverPass"
        x:Class="RoverPass.AppShell">
 
@@ -90,6 +91,8 @@
         <ShellContent Title="(T)Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
         <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
+        <ShellContent Title="Monitor" Icon="tab_about.png" Route="HallMonitor" ContentTemplate="{DataTemplate hallmonitor:HallMonitor}" />
+        
 
     </FlyoutItem>
 

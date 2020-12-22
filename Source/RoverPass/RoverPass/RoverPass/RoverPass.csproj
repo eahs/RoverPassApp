@@ -33,6 +33,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\HallMonitor\HallMonitor.xaml.cs">
+      <DependentUpon>HallMonitor.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\PassAproval\PassAproval.xaml.cs">
       <DependentUpon>PassAproval.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,12 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HallMonitor\HallMonitor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HallMonitor\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PassAproval\PassAproval.xaml">
