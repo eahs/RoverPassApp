@@ -1,6 +1,7 @@
 ﻿using RoverPass.ViewModels;
 using RoverPass.ViewModels.BathroomPass;
 using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
@@ -29,10 +30,14 @@ namespace RoverPass.Views.Passes
         {
             vm.Start(new TimeSpan(0, 10, 0));
         }
-
-        private void EndPass_Clicked(object sender, EventArgs e)
+        private void EndPass_Clicked(object sender,EventArgs e)
         {
             vm.Stop();
+            
+            
         }
+        
+       
+       
     }
 }
