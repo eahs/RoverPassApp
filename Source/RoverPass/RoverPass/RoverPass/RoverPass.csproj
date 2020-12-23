@@ -33,6 +33,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\AddNewClass\AddNewClassPage.xaml.cs">
+      <DependentUpon>AddNewClassPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\HallMonitor\HallMonitor.xaml.cs">
       <DependentUpon>HallMonitor.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,12 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AddNewClass\AddNewClassPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AddNewClass\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HallMonitor\HallMonitor.xaml">

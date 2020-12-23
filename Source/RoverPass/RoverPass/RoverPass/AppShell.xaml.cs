@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using RoverPass.Models;
+using RoverPass.Models.AddNewClass;
 using RoverPass.ViewModels;
 using RoverPass.Views;
+using RoverPass.Views.AddNewClass;
 using RoverPass.Views.ClassesPage;
 using RoverPass.Views.Destination;
 using RoverPass.Views.PassAproval;
@@ -19,6 +21,7 @@ namespace RoverPass
             InitializeComponent();
             Routing.RegisterRoute("BathroomPassPage", typeof(BathroomPassPage));
             Routing.RegisterRoute("PassAproval", typeof(PassAproval));
+            Routing.RegisterRoute("AddNewClassPage", typeof(AddNewClassPage));
             Routing.RegisterRoute("Classes", typeof(Classes));
             Routing.RegisterRoute("DestinationPage", typeof(DestinationPage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));

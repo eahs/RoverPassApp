@@ -25,5 +25,9 @@ namespace RoverPass.Views.ClassesPage
         {
             await Shell.Current.GoToAsync("DestinationPage");
         }
+        private async void AddNewClass_Clicked(object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync("AddNewClassPage");
+        }
     }
 }

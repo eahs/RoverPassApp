@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RoverPass.Views.AddNewClass.AddNewClassPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.AddNewClass"
+    Title="Add A New Class"
+    BackgroundColor="{DynamicResource Gray-Black}"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Frame Margin="10"
+            BorderColor="White"
+            BackgroundColor="Black"
+            CornerRadius="10"
+            HeightRequest="600"
+            WidthRequest="450"
+            IsClippedToBounds="True"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Center">
+            <StackLayout>
+                <Frame CornerRadius="2" IsClippedToBounds="true" Padding="0" WidthRequest="150" HeightRequest="200" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                    <Grid>
+                        <Image Source="screen.png" Aspect="AspectFill"/>
+                        <Label 
+           
+            HorizontalOptions="Center"
+            TextColor="#FFF"
+            VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+                <Label Text="Enter Class Code:" FontSize="Large" TextColor="White"/>
+                <Entry Text="{Binding ClassName, Mode=TwoWay}" FontSize="Medium" BackgroundColor="White" />
+                <StackLayout Orientation="Horizontal">
+                    
+                    <Button Text="Add Class" Command="{Binding SaveCommand}" BackgroundColor="White" TextColor="Black" FontSize="Large"  HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </StackLayout>
+            
+        </Frame>
+        
+
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -126,7 +126,8 @@
                 BorderWidth="2"
                 CornerRadius="20"
                 WidthRequest="200"
-                HeightRequest="100" />
+                HeightRequest="100"
+                Clicked="AddNewClass_Clicked"/>
 
 
 
