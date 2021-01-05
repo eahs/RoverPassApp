@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
               x:Class="RoverPass.Views.QueuePage.PassQueue"
-             BackgroundColor="Black"
+             BackgroundColor="White"
              Title="Pass Queue">
     <Grid>
         
         <StackLayout>
-            <Label  Text="     Pass Requests"  FontSize="25" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+            <Label  Text="     Pass Requests"  FontSize="25" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
             <Frame Margin="10"
-            BorderColor="White"
-            BackgroundColor="Black"
+            BorderColor="Black"
+            BackgroundColor="white"
             CornerRadius="10"
             HeightRequest="200"
             WidthRequest="150"
@@ -20,19 +20,19 @@
               
                 <StackLayout>
 
-                    <Label  Text="Taranveer Flora - Library"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="LeBron James - PE Department"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Imaan Ali - Main Office"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Aidan Fleming - Guidance"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Joshua Averion - Nurse"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Taranveer Flora - Library"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="LeBron James - PE Department"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Imaan Ali - Main Office"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Aidan Fleming - Guidance"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Joshua Averion - Nurse"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
                 </StackLayout>
             </Frame>
         </StackLayout>
         <StackLayout>
             <Label  Text="Active Passes     "  FontSize="25" TextColor="White" VerticalOptions="Center"  HorizontalOptions="End" />
             <Frame Margin="10"
-            BorderColor="White"
-            BackgroundColor="Black"
+            BorderColor="Black"
+            BackgroundColor="White"
             CornerRadius="10"
             HeightRequest="200"
             WidthRequest="150"
@@ -40,17 +40,17 @@
             HorizontalOptions="End"
             VerticalOptions="Center">
                 <StackLayout>
-                    <Label  Text="Anthony Davis - Bathroom"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="John Cena - Mr.Tanczos"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Joe Biden - Nurse"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Justin Gill - Guidance "  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Gianis Akumpo - Main Office"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Anthony Davis - Bathroom"  FontSize="15" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="John Cena - Mr.Tanczos"  FontSize="15" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Joe Biden - Nurse"  FontSize="15" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Justin Gill - Guidance "  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Gianis Akumpo - Main Office"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
                 </StackLayout>
             </Frame>
-            <Label  Text="     Class Pass History"  FontSize="25" TextColor="White" VerticalOptions="End"  HorizontalOptions="Start" />
+            <Label  Text="     Class Pass History"  FontSize="25" TextColor="red" VerticalOptions="End"  HorizontalOptions="Start" />
             <Frame Margin="10"
-            BorderColor="White"
-            BackgroundColor="Black"
+            BorderColor="Black"
+            BackgroundColor="White"
             CornerRadius="10"
             HeightRequest="150"
             WidthRequest="325"
@@ -58,12 +58,12 @@
             HorizontalOptions="Center"
             VerticalOptions="Center">
                 <StackLayout>
-                    <Label  Text="Anthony Davis - Bathroom - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="John Cena - Mr.Tanczos - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Joe Biden - Nurse - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Justin Gill - Guidance - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Gianis Akumpo - Main Office - Active"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Dwayne Wade - Main Office - Ended"  FontSize="15" TextColor="White" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Anthony Davis - Bathroom - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="John Cena - Mr.Tanczos - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Joe Biden - Nurse - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Justin Gill - Guidance - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Gianis Akumpo - Main Office - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Label  Text="Dwayne Wade - Main Office - Ended"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
                 </StackLayout>
             </Frame>
         </StackLayout>
