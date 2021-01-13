@@ -9,7 +9,7 @@
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.ClassesPage"
-    x:Name="myArticlePage"
+    x:Name="ClassPage"
     Title="Classes"
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False">
@@ -33,37 +33,40 @@
         <ScrollView>
 
             <FlexLayout
+                Margin="5"
                 BindableLayout.ItemsSource="{Binding Classes}"
                 HorizontalOptions="CenterAndExpand"
+                JustifyContent="SpaceBetween"
                 VerticalOptions="Start"
                 Wrap="Wrap">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
-                        <!--
-                        <Frame Padding="5,5,5,5">
-                            <Frame
-                                Margin="5,5,5,5"
-                                BorderColor="Black"
-                                CornerRadius="25"
-                                HorizontalOptions="CenterAndExpand">
-                                <StackLayout VerticalOptions="CenterAndExpand">
-                                    <Label HorizontalOptions="CenterAndExpand" Text="{Binding ClassName}" />
-                                </StackLayout>
-                            </Frame>
-                        </Frame>
-                        -->
-                        <Button
-                            BackgroundColor="White"
-                            BorderColor="Black"
-                            BorderWidth="2"
-                            Clicked="PreCalc_Clicked"
-                            CornerRadius="20"
-                            FontSize="Large"
-                            HeightRequest="100"
-                            Text="{Binding ClassName}"
-                            TextColor="Red"
-                            WidthRequest="200" />
+                        <Grid Padding="1" FlexLayout.Basis="50%">
 
+                            <Frame
+                                Margin="5"
+                                BorderColor="#222222"
+                                CornerRadius="5"
+                                HasShadow="True">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped, Source={x:Reference ClassPage}}" CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
+                                <Frame.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0.1" Color="#EEEEEE" />
+                                        <GradientStop Offset="1.0" Color="#CCCCCC" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                            </Frame>
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Medium"
+                                    HorizontalOptions="CenterAndExpand"
+                                    InputTransparent="True"
+                                    Text="{Binding ClassName}" />
+                            </StackLayout>
+                        </Grid>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
 

@@ -1,5 +1,6 @@
 ﻿using RoverPass.Models;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Model = RoverPass.Models.ClassesPage;
@@ -13,6 +14,7 @@ namespace RoverPass.ViewModels.ClassesPage
     public class ClassesPageViewModel : BaseViewModel
     {
         public ObservableCollection<Class> Classes { get; set; }
+        public ICommand ButtonTapped { private set; get; }
 
         public ClassesPageViewModel ()
         {
@@ -52,7 +54,17 @@ namespace RoverPass.ViewModels.ClassesPage
                 ClassName = "Advisory"
             });
 
+            ButtonTapped = new Command(HandleButton);
         }
+
+        private async void HandleButton(object obj)
+        {
+            Class c = obj as Class;
+
+            // c is the class they clicked on
+            await Shell.Current.GoToAsync("DestinationPage");
+        }
+
     }
 
 }

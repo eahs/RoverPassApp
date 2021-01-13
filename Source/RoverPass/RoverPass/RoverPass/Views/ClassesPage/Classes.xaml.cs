@@ -1,5 +1,6 @@
 ﻿using RoverPass.ViewModels.ClassesPage;
 using System;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
@@ -25,15 +26,8 @@ namespace RoverPass.Views.ClassesPage
 
             vm = new ClassesPageViewModel();
             this.BindingContext = vm;
+
         }
 
-        private async void PreCalc_Clicked(object sender, System.EventArgs e)
-        {
-            await Shell.Current.GoToAsync("DestinationPage");
-        }
-        private async void AddNewClass_Clicked(object sender, System.EventArgs e)
-        {
-            await Shell.Current.GoToAsync("AddNewClassPage");
-        }
     }
 }
