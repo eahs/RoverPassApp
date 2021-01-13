@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoverPass.ViewModels.ClassesPage;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
@@ -13,12 +14,17 @@ namespace RoverPass.Views.ClassesPage
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Classes
     {
+        public ClassesPageViewModel vm;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Classes" /> class.
         /// </summary>
         public Classes()
         {
             InitializeComponent();
+
+            vm = new ClassesPageViewModel();
+            this.BindingContext = vm;
         }
 
         private async void PreCalc_Clicked(object sender, System.EventArgs e)
