@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using RoverPass.Models;
+using System.Collections.ObjectModel;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Model = RoverPass.Models.ClassesPage;
@@ -12,93 +14,64 @@ namespace RoverPass.ViewModels.Destination
     [Preserve(AllMembers = true)]
     public class MyArticlePageViewModel : BaseViewModel
     {
-        #region Fields        
+        public ObservableCollection<PassType> Denstinations { get; set; }
+        //public ICommand ButtonTapped { private set; get; }
 
-        /// <summary>
-        /// Gets or sets the article list.
-        /// </summary>
-        private ObservableCollection<Model> articleList;
-
-        #endregion
-
-        #region Constructor
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MyArticlePageViewModel" /> class
-        /// </summary>
         public MyArticlePageViewModel()
         {
-            this.articleList = new ObservableCollection<Model>
+            Denstinations = new ObservableCollection<PassType>();
+
+
+            Denstinations.Add(new PassType
             {
-                
-            };
-
-            this.SearchCommand = new Command(this.SearchButtonClicked);
-            this.ArticleListIteSelectionCommand = new Command(this.ArticleListItemClicked);
-        }
-
-        #endregion
-
-        #region Public properties
-
-        /// <summary>
-        /// Gets or sets the property has been bound with the list view which displays the my article list items.
-        /// </summary>
-        public ObservableCollection<Model> ArticleList
-        {
-            get
+                Name = "Bathroom"
+            });
+            Denstinations.Add(new PassType
             {
-                return this.articleList;
-            }
-
-            set
+                Name = "Library"
+            });
+            Denstinations.Add(new PassType
             {
-                if (this.articleList == value)
-                {
-                    return;
-                }
-
-                this.articleList = value;
-                this.NotifyPropertyChanged();
-            }
+                Name = "Guidance"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "PE Department"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "Grade Level Office"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "Main Office"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "Teacher's Room"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "Security Desk"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "Water Fountain"
+            });
+            Denstinations.Add(new PassType
+            {
+                Name = "Other"
+            });
+            //ButtonTapped = new Command(HandleButton);
         }
 
-        #endregion
+        //private async void HandleButton(object obj)
+        // {
+        //    Class c = obj as Class;
 
-        #region Command
+            // c is the class they clicked on
+        //    await Shell.Current.GoToAsync("DestinationPage");
+        //}
 
-        /// <summary>
-        /// Gets or sets the command is executed when the search button is clicked.
-        /// </summary>
-        public Command SearchCommand { get; set; }
-
-        /// <summary>
-        /// Gets or sets the command is executed when the article list item is clicked.
-        /// </summary>
-        public Command ArticleListIteSelectionCommand { get; set; }
-
-        #endregion
-
-        #region Methods
-
-        /// <summary>
-        /// Invoked when the article list item clicked
-        /// </summary>
-        /// <param name="obj">The object</param>
-        private void ArticleListItemClicked(object obj)
-        {
-            // Do something
-        }
-
-        /// <summary>
-        /// Invoked when the search button clicked
-        /// </summary>
-        /// <param name="obj">The object</param>
-        private void SearchButtonClicked(object obj)
-        {
-            // Do something
-        }
-
-        #endregion
     }
 }

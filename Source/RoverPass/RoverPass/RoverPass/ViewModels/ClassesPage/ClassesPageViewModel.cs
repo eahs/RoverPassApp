@@ -53,6 +53,10 @@ namespace RoverPass.ViewModels.ClassesPage
             {
                 ClassName = "Advisory"
             });
+            Classes.Add(new Class
+            {
+                ClassName = "Add a new Class"
+            });
 
             ButtonTapped = new Command(HandleButton);
         }

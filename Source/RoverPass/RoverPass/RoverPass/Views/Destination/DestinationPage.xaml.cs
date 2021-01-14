@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using RoverPass.ViewModels.Destination;
+using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
@@ -14,11 +15,18 @@ namespace RoverPass.Views.Destination
         /// <summary>
         /// Initializes a new instance of the <see cref="DestinationPage"/> class.
         /// </summary>
+        public MyArticlePageViewModel vmm;
+
+       
         public DestinationPage()
         {
             InitializeComponent();
-        }
 
+            vmm = new MyArticlePageViewModel();
+            this.BindingContext = vmm;
+
+        }
+       
         private async void Bathroom_Clicked(object sender, System.EventArgs e)
         {
             await Shell.Current.GoToAsync("BathroomPassPage");
