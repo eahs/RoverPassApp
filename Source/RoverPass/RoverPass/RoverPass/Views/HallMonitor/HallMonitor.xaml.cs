@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms.Internals;
+﻿using RoverPass.ViewModels.HallMonitor;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace RoverPass.Views.HallMonitor
@@ -13,9 +14,16 @@ namespace RoverPass.Views.HallMonitor
         /// <summary>
         /// Initializes a new instance of the <see cref="T:RoverPass.Views.HallMonitor.AboutUsSimplePage"/> class.
         /// </summary>
+        public HallMonitorViewModel vmmm;
+
+
         public HallMonitor()
         {
             InitializeComponent();
+
+            vmmm = new HallMonitorViewModel();
+            this.BindingContext = vmmm;
+
         }
     }
 }

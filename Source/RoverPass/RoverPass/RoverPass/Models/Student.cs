@@ -4,7 +4,11 @@ using System.Text;
 
 namespace RoverPass.Models
 {
-    class Student
+    public class Student
     {
+        public string StudentName { get; set; }
+        public int GradeLevel { get; set; }
+        public string PassType { get; set; }
+        
     }
 }

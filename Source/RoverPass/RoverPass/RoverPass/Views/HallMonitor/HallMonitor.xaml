@@ -18,112 +18,54 @@
     <ContentPage.Content>
 
         <ScrollView>
-            <StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Imaan Ali - Calculus"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100"
-                />
-                    <Button Text="Taranveer Flora - Main Office"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100"
-                />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Josh Averion - Keyboard Class"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                    <Button Text="Aidan Fleming - Pilot Lesson"
-                  TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Chester - COVID Safety Class"
-               TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                    <Button Text="Faraz - Nurse"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Esteban - BestBuy"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                    <Button Text="David - Guidance"
-                  TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                </StackLayout>
-                
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Samyukta - Outdoors"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                    <Button Text="Vinnie - Custodian Room"
-                 TextColor="Red"
-                FontSize="Large"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="2"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="100" />
-                </StackLayout>
 
-            </StackLayout>
+            <FlexLayout
+                Margin="5"
+                BindableLayout.ItemsSource="{Binding StudentNames}"
+                HorizontalOptions="CenterAndExpand"
+                JustifyContent="SpaceBetween"
+                VerticalOptions="Start"
+                Wrap="Wrap">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="1" FlexLayout.Basis="50%">
+
+                            <Frame
+                                Margin="5"
+                                BorderColor="#222222"
+                                CornerRadius="5"
+                                HasShadow="True">
+                                <!--
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped, Source={x:Reference DestinationPage}}" CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
+                                -->
+                                <Frame.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0.1" Color="#EEEEEE" />
+                                        <GradientStop Offset="1.0" Color="#CCCCCC" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                            </Frame>
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Medium"
+                                    HorizontalOptions="CenterAndExpand"
+                                    InputTransparent="True"
+                                    Text="{Binding StudentName}" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Medium"
+                                    HorizontalOptions="CenterAndExpand"
+                                    InputTransparent="True"
+                                    Text="{Binding PassType}" />
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+
+            </FlexLayout>
         </ScrollView>
 
     </ContentPage.Content>

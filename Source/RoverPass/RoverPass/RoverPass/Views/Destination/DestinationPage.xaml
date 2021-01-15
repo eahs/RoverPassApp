@@ -9,10 +9,10 @@
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.Destination"
-    Title="Select Your Desired Desination:"
+    Title="Select Your Desination:"
     x:Name="myArticlePage"
     BackgroundColor="{DynamicResource Gray-White}"
-    NavigationPage.HasNavigationBar="False">
+    NavigationPage.HasNavigationBar="True">
     
 
     <ContentPage.Resources>
