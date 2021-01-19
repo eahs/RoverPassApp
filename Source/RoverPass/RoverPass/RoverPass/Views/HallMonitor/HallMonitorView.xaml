@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    x:Class="RoverPass.Views.HallMonitor.HallMonitorView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:RoverPass.ViewModels.HallMonitor"
+    x:Name="HallMonitorPage"
+    Title="Hall Monitor"
+    BackgroundColor="{DynamicResource Gray-White}"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <StackLayout  VerticalOptions="Start">
+                <!-- top controls -->
+                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding StudentNames}">
+                    <Label Text="Class Name:" FontSize="30"  TextColor="Black"/>
+                    <Label Text="{Binding StudentNamew}" FontSize="30" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding StudentNames}">
+                    <Label Text="Teacher:" FontSize="30"  TextColor="Black"/>
+                    <Label Text="{Binding PassTypes}" FontSize="30" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding StudentNames}">
+                    <Label Text="Block:" FontSize="30"  TextColor="Black"/>
+                    <Label Text="{Binding GradeLevels}" FontSize="30" TextColor="Black"/>
+                </StackLayout>
+
+
+
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <!-- middle controls -->
+            </StackLayout>
+            <StackLayout  VerticalOptions="End">
+                <!-- bottom controls -->
+                <Button Text="Remove Class"
+                        TextColor="White"
+                        BackgroundColor="Black"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        CornerRadius="20"
+                        WidthRequest="375"
+                        HeightRequest="100" />
+
+            </StackLayout>
+        </StackLayout>
+
+        
+
+    </ContentPage.Content>
+</ContentPage>

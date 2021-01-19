@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
 using RoverPass.Models;
 using RoverPass.Models.HallMonitor;
 using Xamarin.Forms;
@@ -13,7 +14,7 @@ namespace RoverPass.ViewModels.HallMonitor
     {
         public ObservableCollection<Student> StudentNames { get; set; }
         
-        //public ICommand ButtonTapped { private set; get; }
+        public ICommand ButtonTapped1 { private set; get; }
 
         public HallMonitorViewModel()
         {
@@ -68,15 +69,15 @@ namespace RoverPass.ViewModels.HallMonitor
                 GradeLevel = 12,
                 PassType = "Nets"
             });
-            //ButtonTapped = new Command(HandleButton);
+            ButtonTapped1 = new Command(MonitorButton);
         }
 
-        //private async void HandleButton(object obj)
-        // {
-        //    Class c = obj as Class;
+        private async void MonitorButton(object obj) 
+        { 
+            Student s = obj as Student;
 
-        // c is the class they clicked on
-        //    await Shell.Current.GoToAsync("DestinationPage");
-        //}
+         //s is the class they clicked on
+           await Shell.Current.GoToAsync("HallMonitorView");
+       }
     }
 }

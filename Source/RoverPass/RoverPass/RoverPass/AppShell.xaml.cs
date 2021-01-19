@@ -7,6 +7,7 @@ using RoverPass.Views;
 using RoverPass.Views.AddNewClass;
 using RoverPass.Views.ClassesPage;
 using RoverPass.Views.Destination;
+using RoverPass.Views.HallMonitor;
 using RoverPass.Views.PassAproval;
 using RoverPass.Views.Passes;
 using Xamarin.Forms;
@@ -19,6 +20,7 @@ namespace RoverPass
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("HallMonitorView", typeof(HallMonitorView));
             Routing.RegisterRoute("BathroomPassPage", typeof(BathroomPassPage));
             Routing.RegisterRoute("PassAproval", typeof(PassAproval));
             Routing.RegisterRoute("AddNewClassPage", typeof(AddNewClassPage));

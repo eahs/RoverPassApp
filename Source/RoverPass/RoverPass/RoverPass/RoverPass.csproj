@@ -84,6 +84,9 @@
     <EmbeddedResource Update="Views\HallMonitor\HallMonitor.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\HallMonitor\HallMonitorView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\HallMonitor\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
