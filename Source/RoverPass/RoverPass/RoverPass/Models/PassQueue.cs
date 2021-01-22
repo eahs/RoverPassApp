@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RoverPass.Models
 {
-    class PassQueue
+    public  class PassQueue
     {
         public string studentName { get; set; }
         public string className { get; set; }

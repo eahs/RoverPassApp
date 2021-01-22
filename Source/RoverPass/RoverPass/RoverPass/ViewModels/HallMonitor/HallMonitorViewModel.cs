@@ -79,5 +79,6 @@ namespace RoverPass.ViewModels.HallMonitor
          //s is the class they clicked on
            await Shell.Current.GoToAsync("HallMonitorView");
        }
+       
     }
 }

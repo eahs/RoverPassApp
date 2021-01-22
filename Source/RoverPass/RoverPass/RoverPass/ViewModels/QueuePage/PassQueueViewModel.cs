@@ -22,11 +22,11 @@ namespace RoverPass.ViewModels.QueuePage
         {
             Passes = new ObservableCollection<PassQueue>();
 
-            
+
             Passes.Add(new PassQueue
             {
                 studentName = "Imaan Ali",
-                className =" Honors Chemistry",
+                className = " Honors Chemistry",
                 signOutTime = "6:52",
                 signInTime = "7:01",
                 timeRemaining = "--:--"
@@ -54,7 +54,7 @@ namespace RoverPass.ViewModels.QueuePage
                 signOutTime = "6:52",
                 signInTime = "7:01",
                 timeRemaining = "--:--"
-            }); 
+            });
             Passes.Add(new PassQueue
             {
                 studentName = "Samyukta Neeraj",
@@ -62,7 +62,7 @@ namespace RoverPass.ViewModels.QueuePage
                 signOutTime = "6:52",
                 signInTime = "--:--",
                 timeRemaining = "3:36"
-            }); 
+            });
             Passes.Add(new PassQueue
             {
                 studentName = "Denise Kaur",
@@ -70,7 +70,7 @@ namespace RoverPass.ViewModels.QueuePage
                 signOutTime = "6:52",
                 signInTime = "--:--",
                 timeRemaining = "4:12"
-            }); 
+            });
             Passes.Add(new PassQueue
             {
                 studentName = "Megumi Barclay",
@@ -101,5 +101,4 @@ namespace RoverPass.ViewModels.QueuePage
         }
 
     }
-}
 }
