@@ -15,8 +15,10 @@ namespace RoverPass.ViewModels.HallMonitor
             {
                 Children = {
                     new Label { Text = "Welcome to Xamarin.Forms!" }
+
                 }
             };
         }
+        
     }
 }

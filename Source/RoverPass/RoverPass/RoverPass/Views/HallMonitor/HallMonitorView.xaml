@@ -10,43 +10,56 @@
     NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
 
-        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
-            <StackLayout  VerticalOptions="Start">
-                <!-- top controls -->
-                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding StudentNames}">
-                    <Label Text="Class Name:" FontSize="30"  TextColor="Black"/>
-                    <Label Text="{Binding StudentNamew}" FontSize="30" TextColor="Black"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding StudentNames}">
-                    <Label Text="Teacher:" FontSize="30"  TextColor="Black"/>
-                    <Label Text="{Binding PassTypes}" FontSize="30" TextColor="Black"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding StudentNames}">
-                    <Label Text="Block:" FontSize="30"  TextColor="Black"/>
-                    <Label Text="{Binding GradeLevels}" FontSize="30" TextColor="Black"/>
-                </StackLayout>
+        <ScrollView>
 
+            <FlexLayout
+                Margin="5"
+                BindableLayout.ItemsSource="{Binding StudentNames}"
+                HorizontalOptions="CenterAndExpand"
+                JustifyContent="SpaceBetween"
+                VerticalOptions="Start"
+                Wrap="Wrap">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="1" FlexLayout.Basis="50%">
 
+                            <Frame
+                                Margin="5"
+                                BorderColor="#222222"
+                                CornerRadius="5"
+                                HasShadow="True">
 
-            </StackLayout>
-            <StackLayout VerticalOptions="CenterAndExpand">
-                <!-- middle controls -->
-            </StackLayout>
-            <StackLayout  VerticalOptions="End">
-                <!-- bottom controls -->
-                <Button Text="Remove Class"
-                        TextColor="White"
-                        BackgroundColor="Black"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        CornerRadius="20"
-                        WidthRequest="375"
-                        HeightRequest="100" />
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped1, Source={x:Reference HallMonitorPage}}" CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
 
-            </StackLayout>
-        </StackLayout>
+                                <Frame.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0.1" Color="#c90e0e" />
+                                        <GradientStop Offset="1.0" Color="#c90e0e" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                            </Frame>
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Medium"
+                                    HorizontalOptions="CenterAndExpand"
+                                    InputTransparent="True"
+                                    Text="{Binding PassType}" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Medium"
+                                    HorizontalOptions="CenterAndExpand"
+                                    InputTransparent="True"
+                                    Text="{Binding GradeLevel}" />
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
 
-        
+            </FlexLayout>
+        </ScrollView>
 
     </ContentPage.Content>
 </ContentPage>

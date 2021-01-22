@@ -49,11 +49,11 @@
                                 BorderColor="#222222"
                                 CornerRadius="5"
                                 HasShadow="True">
-                                <!--
+                                
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped, Source={x:Reference DestinationPage}}" CommandParameter="{Binding .}" />
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.DestinationTapped, Source={x:Reference DestinationPage}}" CommandParameter="{Binding .}" />
                                 </Frame.GestureRecognizers>
-                                -->
+                              
                                 <Frame.Background>
                                     <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
                                         <GradientStop Offset="0.1" Color="#4E56E4" />
@@ -64,6 +64,7 @@
                             </Frame>
                             <StackLayout VerticalOptions="CenterAndExpand">
                                 <Label
+                                    
                                     FontAttributes="Bold"
                                     FontSize="Medium"
                                     HorizontalOptions="CenterAndExpand"
