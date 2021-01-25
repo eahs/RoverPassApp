@@ -91,7 +91,9 @@
         <ShellContent Title="Classes" Icon="classroom.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
         <ShellContent Title="(T)Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
         <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
+        <!--
         <ShellContent Title="Pass" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
+-->
         <ShellContent Title="Monitor" Icon="tab_about.png" Route="HallMonitor" ContentTemplate="{DataTemplate hallmonitor:HallMonitor}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
 

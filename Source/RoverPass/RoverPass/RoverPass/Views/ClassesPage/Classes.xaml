@@ -11,7 +11,7 @@
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.ClassesPage"
     x:Name="ClassPage"
     Title="Classes"
-    BackgroundColor="{DynamicResource Gray-Black}"
+    BackgroundColor="White"
     NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Resources>

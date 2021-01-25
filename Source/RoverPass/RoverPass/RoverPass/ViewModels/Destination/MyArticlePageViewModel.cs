@@ -15,7 +15,7 @@ namespace RoverPass.ViewModels.Destination
     public class MyArticlePageViewModel : BaseViewModel
     {
         public ObservableCollection<PassType> Denstinations { get; set; }
-        //public ICommand DestinationTapped { private set; get; }
+        public ICommand DestinationTapped { private set; get; }
 
         public MyArticlePageViewModel()
         {
@@ -63,16 +63,16 @@ namespace RoverPass.ViewModels.Destination
             {
                 Name = "Other"
             });
-            //DestinationTapped = new Command(DestButton);
+            DestinationTapped = new Command(DestButton);
         }
 
-      //private async void DestButton(object obj)
-      //  {
-      //      PassType d = obj as PassType;
+      private async void DestButton(object obj)
+       {
+           PassType d = obj as PassType;
 
             // c is the class they clicked on
-       //     await Shell.Current.GoToAsync("BathroomPassPage");
-     //   }
+            await Shell.Current.GoToAsync("BathroomPassPage");
+        }
 
     }
 }
