@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using RoverPass.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Model = RoverPass.Models.ClassesPage;
@@ -11,96 +12,37 @@ namespace RoverPass.ViewModels.BathroomPass
     [Preserve(AllMembers = true)]
     public class BathroomPassViewModel : CountdownViewModel
     {
-        #region Fields        
+        
+            public ObservableCollection<PassControl> PassCommands { get; set; }
+           // public ICommand ButtonTapped { private set; get; }
 
-        /// <summary>
-        /// Gets or sets the article list.
-        /// </summary>
-        private ObservableCollection<Model> articleList;
-
-        #endregion
-
-        #region Constructor
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="BathroomPassViewModel" /> class
-        /// </summary>
-        public BathroomPassViewModel()
-        {
-            this.articleList = new ObservableCollection<Model>
+            public BathroomPassViewModel()
             {
-               
-            };
-
-            this.SearchCommand = new Command(this.SearchButtonClicked);
-            this.ArticleListIteSelectionCommand = new Command(this.ArticleListItemClicked);
-
-        }
+                PassCommands = new ObservableCollection<PassControl>();
 
 
-        #endregion
-
-        #region Public properties
-
-        /// <summary>
-        /// Gets or sets the property has been bound with the list view which displays the my article list items.
-        /// </summary>
-        public ObservableCollection<Model> ArticleList
-        {
-            get
-            {
-                return this.articleList;
-            }
-
-            set
-            {
-                if (this.articleList == value)
+                PassCommands.Add(new PassControl
                 {
-                    return;
-                }
+                    PassCommand = "Start"
+                });
+                PassCommands.Add(new PassControl
+                {
+                    PassCommand = "End"
+                });
 
-                this.articleList = value;
-                this.NotifyPropertyChanged();
+
+                //ButtonTapped = new Command(HandleButton);
             }
+
+            //private async void HandleButton(object obj)
+            //{
+            //    Class c = obj as Class;
+
+                // c is the class they clicked on
+            //    await Shell.Current.GoToAsync("DestinationPage");
+            //}
+
         }
-
-        #endregion
-
-        #region Command
-
-        /// <summary>
-        /// Gets or sets the command is executed when the search button is clicked.
-        /// </summary>
-        public Command SearchCommand { get; set; }
-
-        /// <summary>
-        /// Gets or sets the command is executed when the article list item is clicked.
-        /// </summary>
-        public Command ArticleListIteSelectionCommand { get; set; }
-
-        #endregion
-
-        #region Methods
-
-        /// <summary>
-        /// Invoked when the article list item clicked
-        /// </summary>
-        /// <param name="obj">The object</param>
-        private void ArticleListItemClicked(object obj)
-        {
-            // Do something
-        }
-
-        /// <summary>
-        /// Invoked when the search button clicked
-        /// </summary>
-        /// <param name="obj">The object</param>
-        private void SearchButtonClicked(object obj)
-        {
-            // Do something
-        }
-
-        #endregion
-    }
+    
 
 }

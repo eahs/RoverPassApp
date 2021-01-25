@@ -14,7 +14,7 @@ namespace RoverPass.Views.Passes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BathroomPassPage
     {
-        BathroomPassViewModel vm;
+        BathroomPassViewModel vmmmmm;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MyArticlePage"/> class.
@@ -23,18 +23,21 @@ namespace RoverPass.Views.Passes
         {
             InitializeComponent();
 
-            vm = (BathroomPassViewModel)BindingContext;
+            vmmmmm = new BathroomPassViewModel();
+            this.BindingContext = vmmmmm;
+
         }
 
         private void StartPass_Clicked(object sender, EventArgs e)
         {
-            vm.Start(new TimeSpan(0, 10, 0));
+            vmmmmm.Start(new TimeSpan(0, 10, 0));
         }
         private void EndPass_Clicked(object sender,EventArgs e)
-        {
-            vm.Stop();
+       {
+        vmmmmm.Stop();
             
             
+
         }
         
        
