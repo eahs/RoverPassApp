@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoverPass.Views.ManageClasses.ItemsPage"
              Title="{Binding Title}"
-             BackgroundColor="White"
+             BackgroundColor="Black"
              xmlns:local="clr-namespace:RoverPass.ViewModels"  
              xmlns:model="clr-namespace:RoverPass.Models"  
              x:Name="BrowseItemsPage">
@@ -29,23 +29,23 @@
                         
                         <Label Text="{Binding ClassName}" 
                             LineBreakMode="NoWrap"
-                            TextColor="{DynamicResource Red}" 
+                            TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="23"/>
                         <Label Text="{Binding Teacher}" 
                             LineBreakMode="NoWrap"
-                            TextColor="{DynamicResource Red}" 
+                            TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="20"/>
                         <Label Text="{Binding Block}" 
                             LineBreakMode="NoWrap"
-                            TextColor="{DynamicResource Red}" 
+                            TextColor="{DynamicResource Gray-White}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="18"/>
                         
                         <StackLayout Orientation="Vertical">
                
-                            <BoxView HeightRequest=".5" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+                            <BoxView HeightRequest=".5" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
                         </StackLayout>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 

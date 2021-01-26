@@ -36,8 +36,8 @@
             <StackLayout  VerticalOptions="Start">
                 <!-- top controls -->
                 <Frame Margin="10"
-                       BorderColor="#4E56E4"
-                       BackgroundColor="#4E56E4"
+                       BorderColor="#ed2618"
+                       BackgroundColor="#ed2618"
                        CornerRadius="10"
                        HeightRequest="150"
                        WidthRequest="325"
@@ -76,7 +76,7 @@
                 <Button Text="Start Pass"
                         FontSize="22"
                         TextColor="Black"
-                        BackgroundColor="#4E56E4"
+                        BackgroundColor="#ed2618"
                         Padding="2"
                         VerticalOptions="CenterAndExpand"
                         CornerRadius="10"
@@ -87,7 +87,7 @@
                 <Button Text="End Pass"
                         FontSize="22"
                         TextColor="Black"
-                        BackgroundColor="#4E56E4"
+                        BackgroundColor="#ed2618"
                         Padding="2"
                         VerticalOptions="CenterAndExpand"
                         CornerRadius="10"
