@@ -88,19 +88,19 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Classes" Icon="classroom.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
-        <ShellContent Title="(T)Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
+        <ShellContent Title="Classes" Icon="iconclass.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
+        <ShellContent Title="Manage Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
         <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
         <!--
         <ShellContent Title="Pass" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
 -->
-        <ShellContent Title="Monitor" Icon="tab_about.png" Route="HallMonitor" ContentTemplate="{DataTemplate hallmonitor:HallMonitor}" />
+        <ShellContent Title="Monitor" Icon="iconmonitor.png" Route="HallMonitor" ContentTemplate="{DataTemplate hallmonitor:HallMonitor}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
 
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Logout" Icon ="iconExit.png" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
 
     <!--
