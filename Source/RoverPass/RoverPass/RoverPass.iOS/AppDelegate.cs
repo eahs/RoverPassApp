@@ -1,3 +1,4 @@
+using Syncfusion.SfDataGrid.XForms.iOS;
 using Syncfusion.XForms.iOS.Core;
 using Syncfusion.XForms.iOS.Cards;
 using Syncfusion.SfRating.XForms.iOS;
@@ -30,7 +31,9 @@ namespace RoverPass.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
-            global::Xamarin.Forms.Forms.Init();
+global::Xamarin.Forms.Forms.Init();
+SfDataGridRenderer.Init();
+SfCheckBoxRenderer.Init();
             Core.Init();
             SfCardViewRenderer.Init();
             SfRatingRenderer.Init();

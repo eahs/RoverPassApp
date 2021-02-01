@@ -55,12 +55,7 @@
                                     HorizontalOptions="CenterAndExpand"
                                     InputTransparent="True"
                                     Text="{Binding StudentName}" />
-                                <Label
-                                    FontAttributes="Bold"
-                                    FontSize="Medium"
-                                    HorizontalOptions="CenterAndExpand"
-                                    InputTransparent="True"
-                                    Text="{Binding PassType}" />
+                                
                             </StackLayout>
                         </Grid>
                     </DataTemplate>

@@ -1,71 +1,93 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:datagrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" 
               x:Class="RoverPass.Views.QueuePage.PassQueue"
              BackgroundColor="White"
              Title="Pass Queue">
+
     <Grid>
-        
-        <StackLayout>
-            <Label  Text="     Pass Requests"  FontSize="25" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
+        <ScrollView>
+
+            <StackLayout>
+
+
+            <Label  Text="Pass Requests"  FontSize="30" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="Center" />
             <Frame Margin="10"
             BorderColor="Black"
             BackgroundColor="white"
-            CornerRadius="10"
-            HeightRequest="200"
-            WidthRequest="150"
+            CornerRadius="5"
+            HeightRequest="280"
+            WidthRequest="300"
             IsClippedToBounds="True"
-            HorizontalOptions="Start"
-            VerticalOptions="StartAndExpand">
-              
-                <StackLayout>
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Start">
 
-                    <Label  Text="Taranveer Flora - Library"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="LeBron James - PE Department"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Imaan Ali - Main Office"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Aidan Fleming - Guidance"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Joshua Averion - Nurse"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-        <StackLayout>
-            <Label  Text="Active Passes     "  FontSize="25" TextColor="White" VerticalOptions="Center"  HorizontalOptions="End" />
-            <Frame Margin="10"
-            BorderColor="Black"
-            BackgroundColor="White"
-            CornerRadius="10"
-            HeightRequest="200"
-            WidthRequest="150"
-            IsClippedToBounds="True"
-            HorizontalOptions="End"
-            VerticalOptions="Center">
                 <StackLayout>
-                    <Label  Text="Anthony Davis - Bathroom"  FontSize="15" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="John Cena - Mr.Tanczos"  FontSize="15" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Joe Biden - Nurse"  FontSize="15" TextColor="Red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Justin Gill - Guidance "  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Gianis Akumpo - Main Office"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <FlexLayout
+                Margin="5"
+                BindableLayout.ItemsSource="{Binding Passes}"
+                HorizontalOptions="CenterAndExpand"
+                JustifyContent="SpaceBetween"
+                VerticalOptions="Start"
+                Wrap="Wrap">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="1" FlexLayout.Basis="50%">
+
+                                    <Frame
+                                
+                                            BorderColor="#222222"
+                                            CornerRadius="5"
+                                            HeightRequest="25"
+                                            WidthRequest="75"
+                                            HasShadow="True">
+                                        <!--
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped1, Source={x:Reference HallMonitorPage}}" CommandParameter="{Binding .}" />
+                                        </Frame.GestureRecognizers>
+                                         -->
+                                        <Frame.Background>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0.1" Color="#c90e0e" />
+                                                <GradientStop Offset="1.0" Color="#c90e0e" />
+                                            </LinearGradientBrush>
+                                        </Frame.Background>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="CenterAndExpand">
+                                        <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Medium"
+                                    HorizontalOptions="CenterAndExpand"
+                                    InputTransparent="True"
+                                    Padding="1"
+                                    Text="{Binding studentName}" />
+                                    </StackLayout>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+
+                    </FlexLayout>
+
                 </StackLayout>
             </Frame>
-            <Label  Text="     Class Pass History"  FontSize="25" TextColor="red" VerticalOptions="End"  HorizontalOptions="Start" />
-            <Frame Margin="10"
-            BorderColor="Black"
-            BackgroundColor="White"
-            CornerRadius="10"
-            HeightRequest="150"
-            WidthRequest="325"
-            IsClippedToBounds="True"
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
-                <StackLayout>
-                    <Label  Text="Anthony Davis - Bathroom - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="John Cena - Mr.Tanczos - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Joe Biden - Nurse - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Justin Gill - Guidance - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Gianis Akumpo - Main Office - Active"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                    <Label  Text="Dwayne Wade - Main Office - Ended"  FontSize="15" TextColor="red" VerticalOptions="Center"  HorizontalOptions="Start" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+
+            <Label  Text="Pass History"  FontSize="30" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="Center" />
+
+
+            
+                <datagrid:SfDataGrid 
+                ItemsSource="{Binding Passes}"   HorizontalOptions="CenterAndExpand"  >
+                
+
+
+                </datagrid:SfDataGrid>
+
+            </StackLayout>
+     
+      
+        </ScrollView>
     </Grid>
 </ContentPage>  

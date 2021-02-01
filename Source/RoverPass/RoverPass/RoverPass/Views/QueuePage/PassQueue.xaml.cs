@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoverPass.ViewModels.QueuePage;
+using System;
 using System.Collections.ObjectModel;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
@@ -15,29 +16,22 @@ namespace RoverPass.Views.QueuePage
         /// <summary>
         /// Initializes a new instance of the <see cref="T:RoverPass.Views.QueuePage.AboutUsSimplePage"/> class.
         /// </summary>
-        
-        public class Employee
-        {
-            public string DisplayName { get; set; }
-        }
-        ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-        public ObservableCollection<Employee> Employees { get { return employees; } }
 
+        public PassQueueViewModel vmmmmm;
+
+
+      
         //  public object EmployeeView { get; }
 
         public PassQueue()
         {
             InitializeComponent();
+            vmmmmm = new PassQueueViewModel();
+            this.BindingContext = vmmmmm;
             //EmployeeView.ItemsSource = employees;
 
             // ObservableCollection allows items to be added after ItemsSource
-            // is set and the UI will react to changes
-            employees.Add(new Employee { DisplayName = "Rob Finnerty" });
-            employees.Add(new Employee { DisplayName = "Bill Wrestler" });
-            employees.Add(new Employee { DisplayName = "Dr. Geri-Beth Hooper" });
-            employees.Add(new Employee { DisplayName = "Dr. Keith Joyce-Purdy" });
-            employees.Add(new Employee { DisplayName = "Sheri Spruce" });
-            employees.Add(new Employee { DisplayName = "Burt Indybrick" });
+
         }
 
 

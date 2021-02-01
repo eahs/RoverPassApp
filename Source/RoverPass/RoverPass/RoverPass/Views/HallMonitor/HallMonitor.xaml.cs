@@ -14,15 +14,15 @@ namespace RoverPass.Views.HallMonitor
         /// <summary>
         /// Initializes a new instance of the <see cref="T:RoverPass.Views.HallMonitor.AboutUsSimplePage"/> class.
         /// </summary>
-        public HallMonitorViewModel vmmm;
+        public HallMonitorViewModel vmmmmm;
 
 
         public HallMonitor()
         {
             InitializeComponent();
 
-            vmmm = new HallMonitorViewModel();
-            this.BindingContext = vmmm;
+            vmmmmm = new HallMonitorViewModel();
+            this.BindingContext = vmmmmm;
 
         }
     }
