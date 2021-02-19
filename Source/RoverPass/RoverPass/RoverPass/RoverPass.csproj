@@ -91,6 +91,9 @@
     <EmbeddedResource Update="Views\HallMonitor\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Notification\SocialNotificationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\PassAproval\PassAproval.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

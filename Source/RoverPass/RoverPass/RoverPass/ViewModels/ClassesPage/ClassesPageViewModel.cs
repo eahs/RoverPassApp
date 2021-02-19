@@ -1,5 +1,10 @@
-﻿using RoverPass.Models;
+﻿using Newtonsoft.Json;
+using RestSharp;
+using RoverPass.Models;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -18,6 +23,8 @@ namespace RoverPass.ViewModels.ClassesPage
 
         public ClassesPageViewModel ()
         {
+          
+            
             Classes = new ObservableCollection<Class>();
 
             Period p = new Period

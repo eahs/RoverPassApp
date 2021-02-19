@@ -8,6 +8,7 @@
        xmlns:manageclasses="clr-namespace:RoverPass.Views.ManageClasses"
        xmlns:classespage="clr-namespace:RoverPass.Views.ClassesPage"
        xmlns:queuepage="clr-namespace:RoverPass.Views.QueuePage"
+       xmlns:notificationpage="clr-namespace:RoverPass.Views.Notification;assembly=RoverPass"
        xmlns:addnewclass="clr-namespace:RoverPass.Views.AddNewClass"
        xmlns:bathroompasspage="clr-namespace:RoverPass.Views.Passes;assembly=RoverPass"
        Title = "RoverPass"
@@ -91,9 +92,7 @@
         <ShellContent Title="Classes" Icon="iconclass.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
         <ShellContent Title="Manage Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
         <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
-        <!--
-        <ShellContent Title="Pass" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate passes:BathroomPassPage}" />
--->
+        <ShellContent Title="Notification" Icon="tab_about.png" Route="NotificationPage" ContentTemplate="{DataTemplate notificationpage:TaskNotificationPage}" />
         <ShellContent Title="Monitor" Icon="iconmonitor.png" Route="HallMonitor" ContentTemplate="{DataTemplate hallmonitor:HallMonitor}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
 
