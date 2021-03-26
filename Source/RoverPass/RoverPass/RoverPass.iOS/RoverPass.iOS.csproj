@@ -144,6 +144,9 @@
     <PackageReference Include="RestSharp">
       <Version>106.11.7</Version>
     </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>2.0.0.10</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Buttons">
       <Version>18.3.0.50</Version>
     </PackageReference>
@@ -154,6 +157,9 @@
       <Version>18.3.0.50</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.DataSource">
+      <Version>18.3.0.50</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfChart">
       <Version>18.3.0.50</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
@@ -360,5 +366,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Lilbrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PawLogol.png" />
   </ItemGroup>
 </Project>

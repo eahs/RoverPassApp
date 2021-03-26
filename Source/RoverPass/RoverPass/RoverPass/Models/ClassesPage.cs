@@ -23,6 +23,7 @@ namespace RoverPass.Models
 
         #endregion
 
+
         #region Public Properties
 
         /// <summary>

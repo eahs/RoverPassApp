@@ -50,60 +50,65 @@
     }
   ],
   "navigationList": [
+
     {
-      "itemName": "Hamburger",
-      "name": "Burger King",
-      "description": "Burger, Pizza",
-      "itemDescription": "Classic hamburger with Angus beef grilled to perfection",
-      "itemImage": "Recipe19.png",
-      "offer": "40% OFF - Use code OFF40",
-      "itemRating": 4.5
-    },
-    {
-      "itemName": "Black Bean Burger",
-      "itemDescription": "Our signature black bean burger on a whole-grain bun",
-      "itemImage": "Recipe8.png",
+      "itemName": "LeBron James",
+      "itemDescription": "-This student has beeen granted Mr.Chillot[K311] permisson to go to Gym. -Grade Level: 12",
+      "itemImage": "Lebron.jpg",
       "name": "McDonalds",
       "description": "Burger, Fast Food",
       "offer": "60% OFF - Use code OFF60",
-      "itemRating": 4.4
+      "itemRating": "Gym"
     },
     {
-      "itemName": "Macarons",
-      "itemDescription": "Eight colorful flavors of macarons, fresh daily",
-      "itemImage": "Recipe3.png",
+      "itemName": "Mikey Williams",
+      "name": "Burger King",
+      "description": "Burger, Pizza",
+      "itemDescription": "-This student has beeen granted Mr.Tanczos's[C312] permisson to use the bathroom. -Grade Level: 11",
+      "itemImage": "Mikey.jpg",
+      "offer": "40% OFF - Use code OFF40",
+      "itemRating": "Bathroom"
+    },
+    {
+      "itemName": "Lebron James jr.",
+      "itemDescription": "-This student has been granted Mrs.Varela[A319] permisson to go to Guidance. -Grade Level: 11",
+      "itemImage": "bronny.jpg",
       "name": "Macrons",
       "description": "Cafe, Beverages",
       "offer": "50% OFF - Use code OFF50",
-      "itemRating": 4.2
+      "itemRating": "Guidance"
     },
     {
-      "itemName": "Egg on Toast",
-      "itemDescription": "A sunny-side up egg on toast, just like grandma used to make",
-      "itemImage": "Recipe9.png",
+      "itemName": "Stephen Curry",
+      "itemDescription": "-This student has been granted Mrs.Peters[B320] permisson to go to Main Office. -Grade Level: 11",
+      "itemImage": "Curry.jpg",
+
       "name": "Kings Kitchen",
       "description": "North Indian, Chinese, Sushi",
       "offer": "40% OFF - Use code OFF40",
-      "itemRating": 4.5
+      "itemRating": "Main Office"
     },
     {
-      "itemName": "Chocolate Caramel Cake",
-      "itemDescription": "Rich dark chocolate cake layered with caramel icing",
-      "itemImage": "Recipe13.png",
+      "itemName": "Kelly Oubre jr.",
+      "itemDescription": "-This student has beeen granted Mr.Chillot[K311] permisson to use the Bathroom. -Grade Level: 12",
+      "itemImage": "Kelly.jpg",
+
       "name": "Chai Wale",
       "description": "Cafe, Beverages, Fast Food",
       "offer": "50% OFF - Use code OFF50",
-      "itemRating": 4.6
+      "itemRating": "Bathroom"
     },
     {
-      "itemName": "Red Velvet Cake",
-      "itemDescription": "Classic red velvet cake with rich, cream cheese frosting and dark chocolate shavings",
-      "itemImage": "Recipe4.png",
-      "name": "Krispy Kreme",
-      "description": "Desserts, Beverages",
-      "offer": "60% OFF - Use code OFF60",
-      "itemRating": 4.2
+      "itemName": "Mr.Tanczos",
+      "itemDescription": "Mr.Tanczos[Staff] has left their room[C314] to use the bathroom.",
+      "itemImage": "Tanczos.png",
+
+      "name": "Chai Wale",
+      "description": "Cafe, Beverages, Fast Food",
+      "offer": "50% OFF - Use code OFF50",
+      "itemRating": "Bathroom"
     }
+
   ],
   "photos": [
     {
@@ -778,7 +783,7 @@
     },
     {
       "folderName": "Files",
-      "items": "43 Items", 
+      "items": "43 Items",
       "dateTime": "14/12/2019  11:30 PM"
     }
   ]

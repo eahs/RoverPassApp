@@ -3,11 +3,12 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:aboutus="clr-namespace:RoverPass.Views.AboutUs"
        xmlns:passes="clr-namespace:RoverPass.Views.Passes"
-       xmlns:hallmonitor="clr-namespace:RoverPass.Views.HallMonitor"
+       xmlns:dashboard="clr-namespace:RoverPass.Views.Dashboard"
        xmlns:login="clr-namespace:RoverPass.Views.Login"
        xmlns:manageclasses="clr-namespace:RoverPass.Views.ManageClasses"
        xmlns:classespage="clr-namespace:RoverPass.Views.ClassesPage"
        xmlns:queuepage="clr-namespace:RoverPass.Views.QueuePage"
+       xmlns:hallmonitorpage="clr-namespace:RoverPass.Views.HallMonitorPage"
        xmlns:notificationpage="clr-namespace:RoverPass.Views.Notification;assembly=RoverPass"
        xmlns:addnewclass="clr-namespace:RoverPass.Views.AddNewClass"
        xmlns:bathroompasspage="clr-namespace:RoverPass.Views.Passes;assembly=RoverPass"
@@ -89,11 +90,14 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Dashboard" Icon="classroom.png" Route="Dashbaord" ContentTemplate="{DataTemplate dashboard:HealthCarePage}" />
         <ShellContent Title="Classes" Icon="iconclass.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
+      
+        <ShellContent Title="Monitor" Icon="iconmonitor.png" Route="HallMonitorPage" ContentTemplate="{DataTemplate hallmonitorpage:NavigationListCardPage}" />
+        <!--
         <ShellContent Title="Manage Classes" Icon="classroom.png" Route="ManageClasses" ContentTemplate="{DataTemplate manageclasses:ItemsPage}" />
+        -->
         <ShellContent Title="Queue Page" Icon="classroom.png" Route="QueuePage" ContentTemplate="{DataTemplate queuepage:PassQueue}" />
-        <ShellContent Title="Notification" Icon="tab_about.png" Route="NotificationPage" ContentTemplate="{DataTemplate notificationpage:TaskNotificationPage}" />
-        <ShellContent Title="Monitor" Icon="iconmonitor.png" Route="HallMonitor" ContentTemplate="{DataTemplate hallmonitor:HallMonitor}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutUs" ContentTemplate="{DataTemplate aboutus:AboutUsWithCardsPage}" />
 
     </FlyoutItem>
