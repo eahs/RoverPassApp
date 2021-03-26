@@ -3,8 +3,8 @@
 xmlns:datagrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
 xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" 
-              x:Class="RoverPass.Views.QueuePage.PassQueue"
+             xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms" xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             x:Class="RoverPass.Views.QueuePage.PassQueue"
              BackgroundColor="White"
              Title="Pass Queue">
 
@@ -14,8 +14,8 @@ xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butt
             <StackLayout>
 
 
-            <Label  Text="Pass Requests"  FontSize="30" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="Center" />
-            <Frame Margin="10"
+                <Label  Text="Pass Requests"  FontSize="30" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="Center" />
+                <Frame Margin="10"
             BorderColor="Black"
             BackgroundColor="white"
             CornerRadius="5"
@@ -25,69 +25,79 @@ xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butt
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="Start">
 
-                <StackLayout>
-                    <FlexLayout
+                    <StackLayout>
+                        <FlexLayout
                 Margin="5"
                 BindableLayout.ItemsSource="{Binding Passes}"
                 HorizontalOptions="CenterAndExpand"
                 JustifyContent="SpaceBetween"
                 VerticalOptions="Start"
                 Wrap="Wrap">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Grid Padding="1" FlexLayout.Basis="50%">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="1" FlexLayout.Basis="50%">
 
-                                    <Frame
+                                        <Frame
                                 
                                             BorderColor="#222222"
                                             CornerRadius="5"
                                             HeightRequest="25"
                                             WidthRequest="75"
                                             HasShadow="True">
-                                        <!--
+                                           
                                         <Frame.GestureRecognizers>
-                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped1, Source={x:Reference HallMonitorPage}}" CommandParameter="{Binding .}" />
-                                        </Frame.GestureRecognizers>
-                                         -->
-                                        <Frame.Background>
-                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                                <GradientStop Offset="0.1" Color="#c90e0e" />
-                                                <GradientStop Offset="1.0" Color="#c90e0e" />
-                                            </LinearGradientBrush>
-                                        </Frame.Background>
-                                    </Frame>
-                                    <StackLayout VerticalOptions="CenterAndExpand">
-                                        <Label
+                                                <TapGestureRecognizer Tapped="OnPopupTask" NumberOfTapsRequired="1" />
+                                            </Frame.GestureRecognizers>
+                                     
+                                            <Frame.Background>
+                                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                    <GradientStop Offset="0.1" Color="#c90e0e" />
+                                                    <GradientStop Offset="1.0" Color="#c90e0e" />
+                                                </LinearGradientBrush>
+                                            </Frame.Background>
+                                        </Frame>
+                                        <StackLayout VerticalOptions="CenterAndExpand">
+                                            <Label
                                     FontAttributes="Bold"
                                     FontSize="Medium"
                                     HorizontalOptions="CenterAndExpand"
                                     InputTransparent="True"
                                     Padding="1"
                                     Text="{Binding studentName}" />
-                                    </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+
+                        </FlexLayout>
+
+                    </StackLayout>
+                </Frame>
+
+                <Label  Text="Pass History"  FontSize="30" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="Center" />
+
+
+
+                <listView:SfListView SelectionMode="None" IsScrollingEnabled="False" ItemSpacing="8" ItemSize="80" ItemsSource="{Binding Passes}">
+                    <listView:SfListView.ItemTemplate>
+                        <DataTemplate>
+                            <cards:SfCardView CornerRadius="4" IndicatorColor="#c90e0e" IndicatorPosition="Left" IndicatorThickness="8">
+                                <Grid RowSpacing="4" Padding="16">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding studentName}" ></Label>
+                                    <Label Grid.Column="1" Grid.RowSpan="2" FontSize="16"  HorizontalOptions="EndAndExpand" VerticalOptions="Center" Text="{Binding signOutTime}"></Label>
+                                    <Label Grid.Row="1" Text="{Binding className }" FontSize="12" TextColor="{DynamicResource Gray-700}"  FontFamily="{StaticResource Montserrat-Medium}"></Label>
                                 </Grid>
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
-
-                    </FlexLayout>
-
-                </StackLayout>
-            </Frame>
-
-            <Label  Text="Pass History"  FontSize="30" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="Center" />
-
-
-            
-                <datagrid:SfDataGrid 
-                ItemsSource="{Binding Passes}"   HorizontalOptions="CenterAndExpand"  >
-                
-
-
-                </datagrid:SfDataGrid>
-
+                            </cards:SfCardView>
+                        </DataTemplate>
+                    </listView:SfListView.ItemTemplate>
+                </listView:SfListView>
             </StackLayout>
-     
-      
+
+
         </ScrollView>
     </Grid>
 </ContentPage>  

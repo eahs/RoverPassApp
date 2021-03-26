@@ -11,7 +11,7 @@
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.Destination"
     Title="Select Your Desination:"
     x:Name="myArticlePage"
-    BackgroundColor="{DynamicResource Gray-White}"
+    BackgroundColor="{DynamicResource Gray-Black}"
     NavigationPage.HasNavigationBar="True">
     
 

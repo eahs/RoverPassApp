@@ -1,4 +1,5 @@
-﻿using RoverPass.ViewModels.QueuePage;
+﻿using Rg.Plugins.Popup.Services;
+using RoverPass.ViewModels.QueuePage;
 using System;
 using System.Collections.ObjectModel;
 using Xamarin.Forms.Internals;
@@ -20,7 +21,7 @@ namespace RoverPass.Views.QueuePage
         public PassQueueViewModel vmmmmm;
 
 
-      
+
         //  public object EmployeeView { get; }
 
         public PassQueue()
@@ -33,7 +34,10 @@ namespace RoverPass.Views.QueuePage
             // ObservableCollection allows items to be added after ItemsSource
 
         }
-
+        private void OnPopupTask(object sender, EventArgs e)
+        {
+            PopupNavigation.PushAsync(new PopTaskView());
+        }
 
     }
 }

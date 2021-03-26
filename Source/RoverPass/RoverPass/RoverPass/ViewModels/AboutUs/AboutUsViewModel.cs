@@ -34,7 +34,7 @@ namespace RoverPass.ViewModels.AboutUs
         {
             this.productDescription =
                 "A group of four juniors one day decided to create a virtual hall pass app that allows for schools to further integrate technology and manage an organized hallway system. The Rover Pass app is an all electronic hall pass monitoring system which allows for an efficient and eco-friendly environment.";
-            this.productIcon = App.BaseImageUrl + "Icon.png";
+            //this.productIcon = App.BaseImageUrl + "Icon.png";
             this.productVersion = "1.0";
             this.cardsTopImage = "RoverBackground.png";
 

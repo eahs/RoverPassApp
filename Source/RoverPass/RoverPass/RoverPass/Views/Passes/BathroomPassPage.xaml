@@ -11,7 +11,7 @@
     xmlns:viewModel="clr-namespace:RoverPass.ViewModels.BathroomPass"
     Title="Pass"
     x:Name="myArticlePage"
-    BackgroundColor="{DynamicResource Gray-White}"
+    BackgroundColor="{DynamicResource Gray-Black}"
   
     NavigationPage.HasNavigationBar="False">
 
@@ -35,124 +35,71 @@
 
             <StackLayout  VerticalOptions="Start">
                 <!-- top controls -->
-                <Frame Margin="10"
-                       BorderColor="#ed2618"
+            <Frame Margin="10"
+                       BorderColor="Black"
                        BackgroundColor="#ed2618"
-                       CornerRadius="10"
-                       HeightRequest="150"
-                       WidthRequest="325"
+                        WidthRequest="360"
+                        HeightRequest="360"
+                        CornerRadius="320" 
                        IsClippedToBounds="True"
                        HorizontalOptions="Center"
                        VerticalOptions="Center">
+                <StackLayout>
+                    
+
                     <StackLayout VerticalOptions="Start">
-                        <Label  Text="Time Remaining:"  FontSize="35" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
-                        <Label  Text="{Binding CountdownTime}"  FontSize="55" TextColor="Black" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" />
+                        <Label  Text="   "  FontSize="40" TextColor="Black" VerticalOptions="CenterAndExpand"   />
+
+                        <Label  Text="{Binding CountdownTime}"  FontSize="100" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,10,0,10"  />
                     </StackLayout>
-                </Frame>
-                <!--
-                <Button
-                FontAttributes="Bold"
-                FontSize="Medium"
-                HorizontalOptions="CenterAndExpand"
-                InputTransparent="True"
-                Text="Start"
-                TextColor="Black"
-                Clicked ="StartPass_Clicked"
-                BackgroundColor="#4E56E4"
-                Padding="2"
-            />
-            <Button
-                FontAttributes="Bold"
-                FontSize="Medium"
-                HorizontalOptions="CenterAndExpand"
-                InputTransparent="True"
-                Text="End" 
-                TextColor="Black"
-                Clicked ="EndPass_Clicked"
-                BackgroundColor="#4E56E4"
-                Padding="2"
-            />
-                -->
+                </StackLayout>
+                
+            </Frame>
+             
+          
+       
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
                 <Button Text="Start Pass"
                         FontSize="22"
                         TextColor="Black"
                         BackgroundColor="#ed2618"
                         Padding="2"
-                        VerticalOptions="CenterAndExpand"
-                        CornerRadius="10"
-                        WidthRequest="50"
-                        HeightRequest="150" 
+                        VerticalOptions="StartAndExpand"
+                        WidthRequest="120"
+                        HeightRequest="120"
+                        CornerRadius="80" 
                         Margin="5"
-                        Clicked="StartPass_Clicked"/>
+                        Clicked="StartPass_Clicked"
+                        />
                 <Button Text="End Pass"
                         FontSize="22"
                         TextColor="Black"
-                        BackgroundColor="#ed2618"
+                        BackgroundColor="#ed2618"         
                         Padding="2"
-                        VerticalOptions="CenterAndExpand"
-                        CornerRadius="10"
-                        WidthRequest="50"
-                        HeightRequest="150" 
+                        VerticalOptions="EndAndExpand"
+                        WidthRequest="120"
+                        HeightRequest="120"
+                        CornerRadius="80" 
                         MinimumWidthRequest="25"
                         Margin="5"
                         Clicked="EndPass_Clicked"
-                />
-            <ScrollView>
-            
-            <!-- 
-            <FlexLayout
-                Margin="5"
-         
-                HorizontalOptions="CenterAndExpand"
-                JustifyContent="SpaceBetween"
-                VerticalOptions="Start"
-                Wrap="Wrap">
-              
-
-                            
-                            <Grid Padding="1" FlexLayout.Basis="50%">
-
-                            <Frame
-                                Margin="5"
-                                BorderColor="#000000"
-                                CornerRadius="5"
-                                HasShadow="True">
-                             
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.ButtonTapped, Source={x:Reference BathroomPassPage}}" CommandParameter="{Binding .}" />
-                                </Frame.GestureRecognizers>
-                            
-                                <Frame.Background>
-                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                        <GradientStop Offset="0.1" Color="#4E56E4" />
-                                        <GradientStop Offset="1.0" Color="#4E56E4" />
-                                    </LinearGradientBrush>
-                                </Frame.Background>
-                            </Frame>
-                            <StackLayout VerticalOptions="CenterAndExpand">
-                                <Label
-                                    FontAttributes="Bold"
-                                    FontSize="Medium"
-                                    HorizontalOptions="CenterAndExpand"
-                                    InputTransparent="True"
-                                    Text="Start" 
-                                    />
-                                <Label
-                                    FontAttributes="Bold"
-                                    FontSize="Medium"
-                                    HorizontalOptions="CenterAndExpand"
-                                    InputTransparent="True"
-                                    Text="End" 
-                                  />
-
-                        </StackLayout>
-                        </Grid>
                        
+                />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image
+                        x:Name="ml"
+                        Source="PawLogol.png">
+                    </Image>
+                  
+                </Grid>
+            </StackLayout>
+                    <ScrollView>
+            
           
-        
-
-            </FlexLayout>
-            -->
         </ScrollView>
         </StackLayout>
 

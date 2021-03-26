@@ -18,6 +18,7 @@ namespace RoverPass.ViewModels.ClassesPage
     [Preserve(AllMembers = true)]
     public class ClassesPageViewModel : BaseViewModel
     {
+
         public ObservableCollection<Class> Classes { get; set; }
         public ICommand ButtonTapped { private set; get; }
 
@@ -75,6 +76,7 @@ namespace RoverPass.ViewModels.ClassesPage
             // c is the class they clicked on
             await Shell.Current.GoToAsync("DestinationPage");
         }
+
 
     }
 

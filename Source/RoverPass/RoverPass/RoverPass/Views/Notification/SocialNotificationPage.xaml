@@ -11,6 +11,7 @@
              BackgroundColor="{DynamicResource Gray-White}"
              NavigationPage.HasNavigationBar="False">
 
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -19,32 +20,6 @@
             <converter:BooleanToColorConverter x:Key="BoolToColorConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <ContentPage.ControlTemplate>
-        <ControlTemplate>
-            <StackLayout Spacing="0">
-
-                <!--  Title View  -->
-                <controls:TitleView Title="Notifications" BackgroundColor="{DynamicResource Gray-White} ">
-
-                    <!-- Back button -->
-                    <controls:TitleView.LeadingView>
-                        <buttons:SfButton Text="{StaticResource Back}" Style="{StaticResource IconButtonStyle}" CornerRadius="4"
-                                          Command="{Binding Path=BindingContext.BackCommand, Source={x:Reference socialNotificationPage}}"/>
-                    </controls:TitleView.LeadingView>
-
-                    <!-- More button -->
-                    <controls:TitleView.TrailingView>
-                        <buttons:SfButton Text="{StaticResource More}" Style="{StaticResource IconButtonStyle}" CornerRadius="4"
-                                          Command="{Binding Path=BindingContext.MenuCommand, Source={x:Reference socialNotificationPage}}" />
-                    </controls:TitleView.TrailingView>
-
-                </controls:TitleView>
-                <ContentPresenter />
-
-            </StackLayout>
-        </ControlTemplate>
-    </ContentPage.ControlTemplate>
 
     <ContentPage.Content>
 
@@ -89,7 +64,7 @@
                                                   HorizontalOptions="End">
 
                                     <Label Text="MARK ALL AS READ"
-                                           TextColor="{DynamicResource Link}"
+                                           TextColor= "{DynamicResource Cherry-Purple}"
                                            FontSize="12"
                                            VerticalTextAlignment="Center"
                                            HorizontalTextAlignment="Center"
@@ -162,14 +137,14 @@
 
                     <listView:SfListView.HeaderTemplate>
                         <DataTemplate>
-                           
-                                <Label Text="EARLIER"
+
+                            <Label Text="EARLIER"
                                        Margin="16, 0, 16, 8"
                                        TextColor="{DynamicResource Gray-900}"
                                        FontSize="12"
                                        FontFamily="{DynamicResource Montserrat-SemiBold}"
                                        HorizontalOptions="Start"/>
-                               
+
                         </DataTemplate>
                     </listView:SfListView.HeaderTemplate>
 
@@ -222,5 +197,6 @@
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
-</ContentPage>
 
+
+</ContentPage>
