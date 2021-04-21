@@ -13,7 +13,7 @@
              xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
              xmlns:behavior ="clr-namespace:RoverPass.Behaviors;assembly=RoverPass"
              x:Name="healthCarePage"
-             BackgroundColor="White"
+             BackgroundColor="Black"
              NavigationPage.HasNavigationBar="False"
              Style="{StaticResource ContentPageStyle}">
 

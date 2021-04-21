@@ -53,8 +53,8 @@
                                 </Frame.GestureRecognizers>
                                 <Frame.Background>
                                     <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                        <GradientStop Offset="0.1" Color="#ed2618" />
-                                        <GradientStop Offset="1.0" Color="#ed2618" />
+                                        <GradientStop Offset="0.1" Color="#c81c2c" />
+                                        <GradientStop Offset="1.0" Color="#c81c2c" />
                                     </LinearGradientBrush>
                                 </Frame.Background>
                             </Frame>
