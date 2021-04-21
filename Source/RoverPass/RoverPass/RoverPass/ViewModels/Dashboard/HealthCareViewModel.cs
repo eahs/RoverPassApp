@@ -97,36 +97,36 @@ namespace RoverPass.ViewModels.Dashboard
             {
                 new HealthCare()
                 {
-                    Category = "Libary Pass Aproved",
-                    CategoryValue = "12:10",
+                    Category = "Library Pass Approved",
+                    CategoryValue = "12:10 PM",
                     CategoryPercentage = "Mrs.Klein",
                     BackgroundGradientStart = "#cf86ff"
                 },
                 new HealthCare()
                 {
                     Category = "Math Lab Pass Declined",
-                    CategoryValue = "1:00",
+                    CategoryValue = "1:00 PM",
                     CategoryPercentage = "Mrs.Charnley",
                     BackgroundGradientStart = "#8691ff"
                 },
                 new HealthCare()
                 {
                     Category = "Main Office Pass Accepted",
-                    CategoryValue = "10:05",
+                    CategoryValue = "10:05 AM",
                     CategoryPercentage = "Mrs.Jayant",
                     BackgroundGradientStart = "#ff9686"
                 },
                 new HealthCare()
                 {
                     Category = "Guidance Pass Accepted",
-                    CategoryValue = "10:35",
+                    CategoryValue = "10:35 AM",
                     CategoryPercentage = "Mrs.Koser",
                     BackgroundGradientStart = "#ff9686"
                 },
                 new HealthCare()
                 {
                     Category = "Math Lab Pass Accepted",
-                    CategoryValue = "12:05",
+                    CategoryValue = "12:05 PM",
                     CategoryPercentage = "Mrs.Flood",
                     BackgroundGradientStart = "#ff9686"
                 }

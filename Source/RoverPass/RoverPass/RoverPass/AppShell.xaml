@@ -90,7 +90,7 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Dashboard" Icon="classroom.png" Route="Dashbaord" ContentTemplate="{DataTemplate dashboard:HealthCarePage}" />
+        <ShellContent Title="DashBoard" Icon="classroom.png" Route="Dashbaord" ContentTemplate="{DataTemplate dashboard:HealthCarePage}" />
         <ShellContent Title="Classes" Icon="iconclass.png" Route="ClassesPage" ContentTemplate="{DataTemplate classespage:Classes}" />
       
         <ShellContent Title="Monitor" Icon="iconmonitor.png" Route="HallMonitorPage" ContentTemplate="{DataTemplate hallmonitorpage:NavigationListCardPage}" />

@@ -92,8 +92,8 @@
                                     
                                         <Frame.Background>
                                         <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                            <GradientStop Color="#ed2618" Offset="0.0" />
-                                            <GradientStop Color="#ed2618" Offset="1.0" />
+                                            <GradientStop Color="#c81c2c" Offset="0.0" />
+                                            <GradientStop Color="#c81c2c" Offset="1.0" />
                                         </LinearGradientBrush>
                                     </Frame.Background>
                                 </Frame>
