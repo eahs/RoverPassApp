@@ -57,15 +57,15 @@
                                         <GradientStop Offset="1.0" Color="#c81c2c" />
                                     </LinearGradientBrush>
                                 </Frame.Background>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+
+                                    <Label FontAttributes="Bold" FontSize="Medium" HorizontalOptions="CenterAndExpand" InputTransparent="True" Text="{Binding ClassName}">
+
+                                    </Label>
+
+                                </StackLayout>
                             </Frame>
-                            <StackLayout VerticalOptions="CenterAndExpand">
-                                <Label
-                                    FontAttributes="Bold"
-                                    FontSize="Medium"
-                                    HorizontalOptions="CenterAndExpand"
-                                    InputTransparent="True"
-                                    Text="{Binding ClassName}" />
-                            </StackLayout>
+                           
                         </Grid>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

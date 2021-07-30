@@ -96,10 +96,11 @@
                                             <GradientStop Color="#c81c2c" Offset="1.0" />
                                         </LinearGradientBrush>
                                     </Frame.Background>
+                                    <StackLayout VerticalOptions="CenterAndExpand"   >
+                                        <Label TextColor="{DynamicResource Gray-white}" HorizontalOptions="Center" LineHeight="{OnPlatform Android=1.25, Default=-1}" FontFamily="{StaticResource Montserrat-SemiBold}" FontSize="24" Text="{Binding CategoryValue}"></Label>
+                                    </StackLayout>
                                 </Frame>
-                                <StackLayout VerticalOptions="CenterAndExpand"   >
-                                    <Label TextColor="{DynamicResource Gray-white}" HorizontalOptions="Center" LineHeight="{OnPlatform Android=1.25, Default=-1}" FontFamily="{StaticResource Montserrat-SemiBold}" FontSize="24" Text="{Binding CategoryValue}"></Label>
-                                </StackLayout>
+                                
                             </Grid>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>

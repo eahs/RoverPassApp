@@ -61,16 +61,17 @@
                                       
                                     </LinearGradientBrush>
                                 </Frame.Background>
-                            </Frame>
-                            <StackLayout VerticalOptions="CenterAndExpand">
-                                <Label
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
                                     
                                     FontAttributes="Bold"
                                     FontSize="Medium"
                                     HorizontalOptions="CenterAndExpand"
                                     InputTransparent="True"
                                     Text="{Binding Name}" />
-                            </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                           
                         </Grid>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

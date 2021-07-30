@@ -55,16 +55,17 @@ xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butt
                                                     <GradientStop Offset="1.0" Color="#c90e0e" />
                                                 </LinearGradientBrush>
                                             </Frame.Background>
-                                        </Frame>
-                                        <StackLayout VerticalOptions="CenterAndExpand">
-                                            <Label
+                                            <StackLayout VerticalOptions="CenterAndExpand">
+                                                <Label
                                     FontAttributes="Bold"
                                     FontSize="Medium"
                                     HorizontalOptions="CenterAndExpand"
                                     InputTransparent="True"
                                     Padding="1"
                                     Text="{Binding studentName}" />
-                                        </StackLayout>
+                                            </StackLayout>
+                                        </Frame>
+                                      
                                     </Grid>
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
